@@ -22,8 +22,8 @@ const LifeTimerEnhanced = ({ birthDate = '1990-01-01' }: LifeTimerEnhancedProps)
   const yearsSinceBirth = Math.floor(daysSinceBirth / 365)
   const monthsSinceBirth = Math.floor(daysSinceBirth / 30)
   const weeksSinceBirth = Math.floor(daysSinceBirth / 7)
-  const hoursSinceBirth = Math.floor((currentTime.getTime() - birth.getTime()) / (1000 * 60 * 60))
-  const minutesSinceBirth = Math.floor((currentTime.getTime() - birth.getTime()) / (1000 * 60))
+  // const hoursSinceBirth = Math.floor((currentTime.getTime() - birth.getTime()) / (1000 * 60 * 60))
+  // const minutesSinceBirth = Math.floor((currentTime.getTime() - birth.getTime()) / (1000 * 60))
   
   // 计算今天的进度
   const todayProgress = (currentTime.getHours() * 60 + currentTime.getMinutes()) / (24 * 60) * 100
