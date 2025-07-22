@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import LifeTimerEnhanced from './components/LifeTimerEnhanced'
+import TenThousandDaysCountdown from './components/TenThousandDaysCountdown'
 import NavigationSystem from './components/NavigationSystem'
 import ActionSystem from './components/ActionSystem'
 import GoalSystem from './components/GoalSystem'
@@ -22,17 +22,18 @@ function App() {
     fetchUpdateTime()
   }, [])
 
-  // 设置您的生日（请根据实际情况修改）
-  const birthDate = '1990-01-01'
+  // 设置您的生日和目标日期
+  const birthDate = '1987-08-25'
+  const targetDate = '2052-11-29'
 
   return (
     <DashboardLayout 
       title="生命仪表板"
       subtitle="让每一天都充满意义"
     >
-      {/* 生命计时器 */}
-      <div className="mb-8 rounded-xl overflow-hidden shadow-lg">
-        <LifeTimerEnhanced birthDate={birthDate} />
+      {/* 10000天倒计时 - 页面最顶部，绝对视觉焦点 */}
+      <div className="mb-8">
+        <TenThousandDaysCountdown birthDate={birthDate} targetDate={targetDate} />
       </div>
       
       <div className="space-y-8">
