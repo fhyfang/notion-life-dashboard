@@ -1,4 +1,7 @@
 import { Flag } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { getDatabaseData } from '../services/dataLoader'
+import { motion } from 'framer-motion'
 
 interface Goal {
   name: string
@@ -8,35 +11,77 @@ interface Goal {
 }
 
 const GoalSystem = () => {
-  const goals: Goal[] = [
-    { name: '个人博客建成', progress: 75, deadline: '2024-02-15', remainingDays: 208 },
-    { name: '技能学习计划', progress: 45, deadline: '2024-03-01', remainingDays: 23 },
-  ]
+  const [goals, setGoals] = useState<Goal[]>([]);
+
+  useEffect(() => {
+    const fetchGoals = async () => {
+      const data = await getDatabaseData('目标库');
+      const loadedGoals = data.map((item: any) => {
+        const deadline = item.properties["截止日期"]?.date?.start || '';
+        const remainingDays = deadline ? Math.ceil((new Date(deadline).getTime() - new Date().getTime()) / (1000 * 3600 * 24)) : 0;
+        // const progress = item.properties["进度"]?.number || 0;
+        
+        return {
+          name: item.properties["理想状态"]?.title[0]?.plain_text || '未命名目标',
+          progress: item.properties["目标进度"]?.rollup?.number || 0,
+          deadline: deadline,
+          remainingDays: Math.max(0, remainingDays)
+        };
+      });
+      setGoals(loadedGoals);
+    };
+
+    fetchGoals();
+  }, []);
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-6">
-      <div className="flex items-center space-x-2 mb-4">
-        <Flag className="w-5 h-5 text-gray-600" />
-        <h2 className="text-lg font-semibold">目标系统</h2>
+    <div className="w-full bg-white shadow-lg rounded-2xl p-8">
+      <div className="flex items-center justify-center mb-8">
+        <Flag className="w-6 h-6 text-amber-600 mr-3" />
+        <h2 className="text-2xl font-bold text-gray-800">目标系统</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {goals.map((goal, index) => (
-          <div key={index} className="space-y-2">
-            <div className="flex justify-between items-center">
-              <span className="text-sm font-medium">{goal.name}</span>
-              <span className="text-sm text-gray-500">{goal.progress}%</span>
+          <motion.div 
+            key={index} 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+            className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-all duration-300 border border-gray-100"
+          >
+            <div className="space-y-4">
+              <h3 className="font-semibold text-gray-800 text-lg line-clamp-2">{goal.name}</h3>
+              
+              <div className="space-y-2">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-gray-600">进度</span>
+                  <span className="text-lg font-bold text-amber-600">{goal.progress}%</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                  <motion.div 
+                    className="bg-gradient-to-r from-amber-400 to-amber-600 h-3 rounded-full"
+                    initial={{ width: 0 }}
+                    animate={{ width: `${goal.progress}%` }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                  />
+                </div>
+              </div>
+              
+              <div className="pt-3 border-t border-gray-200">
+                <div className="text-sm text-gray-600">
+                  {goal.deadline && (
+                    <>
+                      <span className="block">截止: {new Date(goal.deadline).toLocaleDateString('zh-CN')}</span>
+                      <span className="block font-medium text-gray-800">
+                        {goal.remainingDays > 0 ? `剩余 ${goal.remainingDays} 天` : '已过期'}
+                      </span>
+                    </>
+                  )}
+                </div>
+              </div>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-2">
-              <div 
-                className="bg-yellow-500 h-2 rounded-full transition-all duration-300"
-                style={{ width: `${goal.progress}%` }}
-              />
-            </div>
-            <div className="text-xs text-gray-500">
-              完成日期: {goal.deadline} (还有 {goal.remainingDays} 天)
-            </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

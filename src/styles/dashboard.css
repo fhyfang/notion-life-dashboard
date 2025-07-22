@@ -1,0 +1,51 @@
+/* 全局容器样式 */
+.dashboard-section {
+  @apply bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300;
+}
+
+.dashboard-section-header {
+  @apply text-xl font-bold text-gray-800 mb-6 flex items-center;
+}
+
+/* 卡片样式 */
+.dashboard-card {
+  @apply bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors duration-200;
+}
+
+/* 渐变背景 */
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 玻璃态效果 */
+.glass-effect {
+  @apply bg-white/70 backdrop-blur-md;
+}
+
+/* 响应式间距 */
+@media (min-width: 1024px) {
+  .dashboard-grid {
+    @apply grid gap-8;
+  }
+}
+
+@media (max-width: 1023px) {
+  .dashboard-grid {
+    @apply grid gap-6;
+  }
+}
+
+/* 加载动画 */
+.skeleton {
+  @apply animate-pulse bg-gray-200 rounded;
+}
+
+/* 悬浮效果 */
+.hover-lift {
+  @apply transition-transform duration-200 hover:-translate-y-1;
+}
+
+/* 数字高亮 */
+.metric-value {
+  @apply text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+}

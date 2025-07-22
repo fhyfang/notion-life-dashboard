@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/notion-life-dashboard",
+  "homepage": "https://fhyfang.github.io/notion-life-dashboard",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

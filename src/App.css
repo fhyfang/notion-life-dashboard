@@ -1,7 +1,14 @@
 /* 仪表盘样式 */
 .container {
   width: 100%;
-  max-width: 1400px;
+}
+
+/* 确保根元素使用全宽度 */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 /* 卡片阴影效果 */

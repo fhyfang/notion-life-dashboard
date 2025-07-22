@@ -1,4 +1,6 @@
 import { Activity, CheckCircle, Circle } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { getDatabaseData } from '../services/dataLoader'
 
 interface Task {
   id: string
@@ -9,14 +11,36 @@ interface Task {
 }
 
 const ActionSystem = () => {
-  const tasks: Task[] = [
-    { id: '1', title: '完成项目火柏署宴', time: '09:00-11:00', completed: true, type: '深度工作' },
-    { id: '2', title: '学习副校长模板', time: '11:30-12:15', completed: false, type: '团队会议' },
-    { id: '3', title: '学习影技术', time: '14:00-15:30', completed: false, type: '技能学习' },
-    { id: '4', title: '健身锻炼', time: '16:00-17:00', completed: false, type: '健康活动' },
-    { id: '5', title: '阅读冥想', time: '19:00-19:45', completed: false, type: '个人成长' }
-  ]
+  const [tasks, setTasks] = useState<Task[]>([]);
+  const [, setDailyLogs] = useState<any[]>([]);
+  const [, setHealthData] = useState<any[]>([]);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      // 获取行动库数据
+      const actionData = await getDatabaseData('行动库');
+      const loadedTasks = actionData.slice(0, 5).map((item: any) => ({
+        id: item.id,
+        title: item.properties["行动描述"]?.title[0]?.plain_text || '未命名任务',
+        time: item.properties["截止日期"]?.date?.start || '待定',
+        completed: item.properties["状态"]?.status?.name === '已完成' || false,
+        type: item.properties["行动类型"]?.select?.name || '其他'
+      }));
+      setTasks(loadedTasks);
+
+      // 获取每日日志数据
+      const logsData = await getDatabaseData('每日日志');
+      setDailyLogs(logsData);
+
+      // 获取健康日记数据
+      const healthRecords = await getDatabaseData('健康日记');
+      setHealthData(healthRecords);
+    };
+
+    fetchData();
+  }, []);
+
+  // 根据实际数据计算统计信息
   const stats = [
     { label: '健身锻炼', value: 82, unit: '%' },
     { label: '睡眠质量', value: 90, unit: '%' },
@@ -24,7 +48,7 @@ const ActionSystem = () => {
   ]
 
   const completedCount = tasks.filter(t => t.completed).length
-  const completionRate = Math.round((completedCount / tasks.length) * 100)
+  const completionRate = tasks.length > 0 ? Math.round((completedCount / tasks.length) * 100) : 0
 
   return (
     <div className="bg-white shadow-md rounded-lg p-6">
