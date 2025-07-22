@@ -28,7 +28,7 @@ export async function loadNotionData(): Promise<NotionData> {
     
     cachedData = await response.json();
     lastFetch = now;
-    return cachedData;
+    return cachedData!;
   } catch (error) {
     console.error('Error loading Notion data:', error);
     // 返回空数据结构
