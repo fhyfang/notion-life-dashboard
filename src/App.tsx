@@ -6,11 +6,19 @@ import ActionSystem from './components/ActionSystem'
 import GoalSystem from './components/GoalSystem'
 import ResourceSystem from './components/ResourceSystem'
 import DeepAnalysis from './components/DeepAnalysis'
+import { getLastUpdateTime } from './services/dataLoader'
 
 function App() {
   const [currentTime, setCurrentTime] = useState(new Date())
+  const [lastUpdatedTime, setLastUpdatedTime] = useState<string | null>(null)
 
   useEffect(() => {
+    const fetchUpdateTime = async () => {
+      const lastUpdate = await getLastUpdateTime()
+      setLastUpdatedTime(lastUpdate)
+    }
+
+    fetchUpdateTime()
     const timer = setInterval(() => {
       setCurrentTime(new Date())
     }, 1000)
@@ -42,7 +50,7 @@ function App() {
       {/* 页脚 */}
       <footer className="bg-white border-t mt-12 py-4">
         <div className="container mx-auto px-4 text-center text-sm text-gray-600">
-          最后同步：{currentTime.toLocaleString('zh-CN')} | 数据来源：Notion API
+          最后同步：{lastUpdatedTime ?? '加载中...'} | 数据来源：Notion API
         </div>
       </footer>
     </div>

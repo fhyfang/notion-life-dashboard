@@ -1,0 +1,37 @@
+name: Sync Notion Data
+
+on:
+  schedule:
+    # 每小时运行一次 (UTC时间)
+    - cron: '0 * * * *'
+  push:
+    branches: [ main ]
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm install @notionhq/client
+      
+    - name: Sync Notion data
+      env:
+        NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+      run: node scripts/sync-notion-data.js
+      
+    - name: Commit and push if changed
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+        git add public/data/notion-data.json
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update Notion data [skip ci]" && git push)
