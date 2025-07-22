@@ -4,6 +4,388 @@
     "data": [
       {
         "object": "page",
+        "id": "238b6a1b-a406-80ed-8a54-feb5b16ac91b",
+        "created_time": "2025-07-22T13:17:00.000Z",
+        "last_edited_time": "2025-07-22T13:17:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8136-9b6c-f6dc2ddd4aee"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "来源故事": {
+            "id": "%3ATCI",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "权衡原则": {
+            "id": "%3B%60N%3C",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "正面行为 (Do's)": {
+            "id": "%3E%40SG",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "类型": {
+            "id": "%40j%40%7C",
+            "type": "select",
+            "select": null
+          },
+          "创建日期": {
+            "id": "ImL%3A",
+            "type": "date",
+            "date": null
+          },
+          "负面行为 (Don'ts)": {
+            "id": "Lcws",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "优先级": {
+            "id": "QIs%3A",
+            "type": "select",
+            "select": null
+          },
+          "决策场景": {
+            "id": "UEdC",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "判断标准": {
+            "id": "Uoy%3E",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "关联检验": {
+            "id": "VWK%5C",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "践行状态": {
+            "id": "%60d%3F_",
+            "type": "status",
+            "status": {
+              "id": "9aeb43c4-b8e0-4837-8f0a-cbcd470fb561",
+              "name": "未开始",
+              "color": "default"
+            }
+          },
+          "核心描述": {
+            "id": "ttry",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "关联目标": {
+            "id": "vTPG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "价值观名称": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "价值观",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "价值观",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/238b6a1ba40680ed8a54feb5b16ac91b",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "238b6a1b-a406-80a2-9797-d50998c3697f",
+        "created_time": "2025-07-22T13:12:00.000Z",
+        "last_edited_time": "2025-07-22T13:32:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🔵"
+        },
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8136-9b6c-f6dc2ddd4aee"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "来源故事": {
+            "id": "%3ATCI",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "权衡原则": {
+            "id": "%3B%60N%3C",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "正面行为 (Do's)": {
+            "id": "%3E%40SG",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "类型": {
+            "id": "%40j%40%7C",
+            "type": "select",
+            "select": {
+              "id": "d3a04318-2446-4fe6-9c05-161841ba8bb7",
+              "name": "身份 (Identity)",
+              "color": "gray"
+            }
+          },
+          "创建日期": {
+            "id": "ImL%3A",
+            "type": "date",
+            "date": null
+          },
+          "负面行为 (Don'ts)": {
+            "id": "Lcws",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "优先级": {
+            "id": "QIs%3A",
+            "type": "select",
+            "select": {
+              "id": "98309fb2-eb8b-4813-ba15-210990e4bf40",
+              "name": "5分",
+              "color": "pink"
+            }
+          },
+          "决策场景": {
+            "id": "UEdC",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "判断标准": {
+            "id": "Uoy%3E",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "关联检验": {
+            "id": "VWK%5C",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "践行状态": {
+            "id": "%60d%3F_",
+            "type": "status",
+            "status": {
+              "id": "9aeb43c4-b8e0-4837-8f0a-cbcd470fb561",
+              "name": "未开始",
+              "color": "default"
+            }
+          },
+          "核心描述": {
+            "id": "ttry",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "关联目标": {
+            "id": "vTPG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "价值观名称": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "成为AI native",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "成为AI native",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/AI-native-238b6a1ba40680a29797d50998c3697f",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "238b6a1b-a406-8019-9dcd-d90411f73fbd",
+        "created_time": "2025-07-22T13:09:00.000Z",
+        "last_edited_time": "2025-07-22T13:32:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🔵"
+        },
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8136-9b6c-f6dc2ddd4aee"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "来源故事": {
+            "id": "%3ATCI",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "权衡原则": {
+            "id": "%3B%60N%3C",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "正面行为 (Do's)": {
+            "id": "%3E%40SG",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "类型": {
+            "id": "%40j%40%7C",
+            "type": "select",
+            "select": {
+              "id": "be5aac4e-e809-4958-8a31-cc75345b7474",
+              "name": "信念 (Belief)",
+              "color": "yellow"
+            }
+          },
+          "创建日期": {
+            "id": "ImL%3A",
+            "type": "date",
+            "date": null
+          },
+          "负面行为 (Don'ts)": {
+            "id": "Lcws",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "优先级": {
+            "id": "QIs%3A",
+            "type": "select",
+            "select": {
+              "id": "98309fb2-eb8b-4813-ba15-210990e4bf40",
+              "name": "5分",
+              "color": "pink"
+            }
+          },
+          "决策场景": {
+            "id": "UEdC",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "判断标准": {
+            "id": "Uoy%3E",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "关联检验": {
+            "id": "VWK%5C",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "践行状态": {
+            "id": "%60d%3F_",
+            "type": "status",
+            "status": {
+              "id": "9aeb43c4-b8e0-4837-8f0a-cbcd470fb561",
+              "name": "未开始",
+              "color": "default"
+            }
+          },
+          "核心描述": {
+            "id": "ttry",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "关联目标": {
+            "id": "vTPG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "价值观名称": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "AI first",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "AI first",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/AI-first-238b6a1ba40680199dcdd90411f73fbd",
+        "public_url": null
+      },
+      {
+        "object": "page",
         "id": "238b6a1b-a406-8064-a9a7-d96b191d1473",
         "created_time": "2025-07-22T00:32:00.000Z",
         "last_edited_time": "2025-07-22T03:29:00.000Z",
@@ -388,7 +770,7 @@
         "object": "page",
         "id": "235b6a1b-a406-8056-acaf-dceb7eec4696",
         "created_time": "2025-07-19T15:29:00.000Z",
-        "last_edited_time": "2025-07-22T00:34:00.000Z",
+        "last_edited_time": "2025-07-22T13:17:00.000Z",
         "created_by": {
           "object": "user",
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
@@ -398,7 +780,10 @@
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
         },
         "cover": null,
-        "icon": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🔵"
+        },
         "parent": {
           "type": "database_id",
           "database_id": "235b6a1b-a406-8136-9b6c-f6dc2ddd4aee"
@@ -935,7 +1320,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.045Z"
+    "lastUpdated": "2025-07-22T13:36:52.104Z"
   },
   "价值观检验": {
     "name": "价值观检验",
@@ -1064,7 +1449,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.041Z"
+    "lastUpdated": "2025-07-22T13:36:48.117Z"
   },
   "目标库": {
     "name": "目标库",
@@ -1208,7 +1593,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:11.671Z"
+    "lastUpdated": "2025-07-22T13:36:48.151Z"
   },
   "项目库": {
     "name": "项目库",
@@ -1804,7 +2189,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.511Z"
+    "lastUpdated": "2025-07-22T13:36:48.206Z"
   },
   "行动库": {
     "name": "行动库",
@@ -3634,7 +4019,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.148Z"
+    "lastUpdated": "2025-07-22T13:36:48.265Z"
   },
   "每日日志": {
     "name": "每日日志",
@@ -4630,7 +5015,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.075Z"
+    "lastUpdated": "2025-07-22T13:36:48.146Z"
   },
   "情绪记录": {
     "name": "情绪记录",
@@ -4774,7 +5159,7 @@
             "type": "formula",
             "formula": {
               "type": "number",
-              "number": 4139
+              "number": 4196
             }
           },
           "触发类型": {
@@ -4936,7 +5321,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.123Z"
+    "lastUpdated": "2025-07-22T13:36:48.154Z"
   },
   "健康日记": {
     "name": "健康日记",
@@ -6260,7 +6645,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.105Z"
+    "lastUpdated": "2025-07-22T13:36:48.264Z"
   },
   "注意力记录": {
     "name": "注意力记录",
@@ -6350,7 +6735,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.041Z"
+    "lastUpdated": "2025-07-22T13:36:48.121Z"
   },
   "创造记录": {
     "name": "创造记录",
@@ -6449,7 +6834,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.094Z"
+    "lastUpdated": "2025-07-22T13:36:48.275Z"
   },
   "互动记录": {
     "name": "互动记录",
@@ -6697,7 +7082,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.071Z"
+    "lastUpdated": "2025-07-22T13:36:48.729Z"
   },
   "财务记录": {
     "name": "财务记录",
@@ -6800,7 +7185,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.362Z"
+    "lastUpdated": "2025-07-22T13:36:48.143Z"
   },
   "成长复盘": {
     "name": "成长复盘",
@@ -7192,7 +7577,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.083Z"
+    "lastUpdated": "2025-07-22T13:36:50.083Z"
   },
   "欲望数据库": {
     "name": "欲望数据库",
@@ -7292,7 +7677,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.087Z"
+    "lastUpdated": "2025-07-22T13:36:48.106Z"
   },
   "知识库": {
     "name": "知识库",
@@ -7605,7 +7990,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.090Z"
+    "lastUpdated": "2025-07-22T13:36:48.874Z"
   },
   "思维模型": {
     "name": "思维模型",
@@ -8115,7 +8500,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.103Z"
+    "lastUpdated": "2025-07-22T13:36:49.030Z"
   },
   "关系网": {
     "name": "关系网",
@@ -8259,6 +8644,6 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T12:39:10.051Z"
+    "lastUpdated": "2025-07-22T13:36:49.089Z"
   }
 }
