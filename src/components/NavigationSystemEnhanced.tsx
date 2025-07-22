@@ -118,7 +118,7 @@ const NavigationSystemEnhanced = () => {
               <h4 className="text-xl font-bold text-gray-800 mb-2">
                 {values[currentValueIndex].name}
               </h4>
-              <p className="text-sm text-gray-600 line-clamp-3">
+              <p className="text-sm text-gray-600 overflow-hidden">
                 {values[currentValueIndex].description}
               </p>
             </div>

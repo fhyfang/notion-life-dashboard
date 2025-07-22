@@ -51,7 +51,7 @@ const GoalSystem = () => {
             className="bg-gray-50 rounded-xl p-6 hover:shadow-md transition-all duration-300 border border-gray-100"
           >
             <div className="space-y-4">
-              <h3 className="font-semibold text-gray-800 text-lg line-clamp-2">{goal.name}</h3>
+              <h3 className="font-semibold text-gray-800 text-lg overflow-hidden">{goal.name}</h3>
               
               <div className="space-y-2">
                 <div className="flex justify-between items-center">

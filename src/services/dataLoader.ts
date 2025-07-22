@@ -21,9 +21,11 @@ export async function loadNotionData(): Promise<NotionData> {
   }
   
   try {
-    const response = await fetch('/data/notion-data.json');
+    // 修复生产环境路径问题
+    const basePath = import.meta.env.DEV ? '/data/' : '/notion-life-dashboard/data/';
+    const response = await fetch(`${basePath}notion-data.json`);
     if (!response.ok) {
-      throw new Error('Failed to load data');
+      throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
     }
     
     cachedData = await response.json();

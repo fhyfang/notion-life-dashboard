@@ -97,7 +97,7 @@ const DeepAnalysisNav = () => {
                   <Icon className={`w-6 h-6 ${module.color}`} />
                 </div>
                 <h4 className="text-sm font-semibold text-gray-800 mb-1">{module.title}</h4>
-                <p className="text-xs text-gray-600 line-clamp-2">{module.subtitle}</p>
+                <p className="text-xs text-gray-500 mt-1 overflow-hidden">{module.subtitle}</p>
               </div>
             </motion.div>
           )
