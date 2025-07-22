@@ -44,6 +44,11 @@
             "type": "select",
             "select": null
           },
+          "按钮": {
+            "id": "Hzzx",
+            "type": "button",
+            "button": {}
+          },
           "创建日期": {
             "id": "ImL%3A",
             "type": "date",
@@ -95,6 +100,17 @@
             "relation": [],
             "has_more": false
           },
+          "AI 摘要": {
+            "id": "v_%3Bk",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "DB06: 每日日志": {
+            "id": "v~MI",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
           "价值观名称": {
             "id": "title",
             "type": "title",
@@ -126,7 +142,7 @@
         "object": "page",
         "id": "238b6a1b-a406-80a2-9797-d50998c3697f",
         "created_time": "2025-07-22T13:12:00.000Z",
-        "last_edited_time": "2025-07-22T13:32:00.000Z",
+        "last_edited_time": "2025-07-22T13:53:00.000Z",
         "created_by": {
           "object": "user",
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
@@ -150,17 +166,258 @@
           "来源故事": {
             "id": "%3ATCI",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "在践行“AI First”的过程中，发现其最终指向并非优化旧事物，而是创造全新的物种。“AI Native”就是我们所追求的终极目标——那个值得我们为之努力的、激动人心的未来。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "在践行“AI First”的过程中，发现其最终指向并非优化旧事物，而是创造全新的物种。“AI Native”就是我们所追求的终极目标——那个值得我们为之努力的、激动人心的未来。",
+                "href": null
+              }
+            ]
           },
           "权衡原则": {
             "id": "%3B%60N%3C",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "我们愿意为了一个颠覆性的“AI Native”构想，放弃那些看似稳妥但只是“AI赋能”的改良型项目。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "我们愿意为了一个颠覆性的“AI Native”构想，放弃那些看似稳妥但只是“AI赋能”的改良型项目。",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "我们追求的是创造新品类，而非在旧品类中优化。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "我们追求的是创造新品类，而非在旧品类中优化。",
+                "href": null
+              }
+            ]
           },
           "正面行为 (Do's)": {
             "id": "%3E%40SG",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "从“可能性”出发：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "从“可能性”出发：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 思考“有了AI，什么以前不可能的事情现在变得可能了？”\n2. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 思考“有了AI，什么以前不可能的事情现在变得可能了？”\n2. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "设计“魔法时刻”：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "设计“魔法时刻”：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 围绕那个让用户惊叹“Wow”的核心体验来构建整个产品。\n3. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 围绕那个让用户惊叹“Wow”的核心体验来构建整个产品。\n3. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "以“意图”为中心：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "以“意图”为中心：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 让用户表达他们的目标，而不是强迫他们执行繁琐的步骤。\n4. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 让用户表达他们的目标，而不是强迫他们执行繁琐的步骤。\n4. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "构建数据飞轮：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "构建数据飞轮：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 设计能让产品随着用户使用而“越用越聪明”的反馈闭环。\n5. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 设计能让产品随着用户使用而“越用越聪明”的反馈闭环。\n5. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "探索新交互：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "探索新交互：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 不局限于按钮和表单，大胆尝试对话式、代理式等新交互范式。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 不局限于按钮和表单，大胆尝试对话式、代理式等新交互范式。",
+                "href": null
+              }
+            ]
           },
           "类型": {
             "id": "%40j%40%7C",
@@ -171,15 +428,212 @@
               "color": "gray"
             }
           },
+          "按钮": {
+            "id": "Hzzx",
+            "type": "button",
+            "button": {}
+          },
           "创建日期": {
             "id": "ImL%3A",
             "type": "date",
-            "date": null
+            "date": {
+              "start": "2025-07-22",
+              "end": null,
+              "time_zone": null
+            }
           },
           "负面行为 (Don'ts)": {
             "id": "Lcws",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "新瓶装旧酒：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "新瓶装旧酒：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 不要在旧的产品形态上，简单叠加一个AI功能就称之为“革新”。\n2. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 不要在旧的产品形态上，简单叠加一个AI功能就称之为“革新”。\n2. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "模仿人类流程：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "模仿人类流程：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 不要只是用AI模仿人类的低效工作流，而要去思考如何彻底重塑它。\n3. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 不要只是用AI模仿人类的低效工作流，而要去思考如何彻底重塑它。\n3. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "忽视冷启动：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "忽视冷启动：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 不去思考如何获取初始数据和用户，来启动AI模型的学习飞轮。\n4. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 不去思考如何获取初始数据和用户，来启动AI模型的学习飞轮。\n4. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "追求100%准确：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "追求100%准确：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 不要因为AI无法做到绝对完美，而放弃那些能提供90%巨大价值的颠覆性场景。\n5. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 不要因为AI无法做到绝对完美，而放弃那些能提供90%巨大价值的颠覆性场景。\n5. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "忘记伦理：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "忘记伦理：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 不在设计之初就考虑AI带来的隐私、安全和公平性问题。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 不在设计之初就考虑AI带来的隐私、安全和公平性问题。",
+                "href": null
+              }
+            ]
           },
           "优先级": {
             "id": "QIs%3A",
@@ -193,12 +647,184 @@
           "决策场景": {
             "id": "UEdC",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": " ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "场景：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "场景：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 在两个产品方向中选择。\n• ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 在两个产品方向中选择。\n• ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "方向A (AI赋能)：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "方向A (AI赋能)：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 开发一个AI日历助手，能帮你优化日程安排。\n• ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 开发一个AI日历助手，能帮你优化日程安排。\n• ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "方向B (AI Native)：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "方向B (AI Native)：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 开发一个AI旅行代理，你告诉它预算和偏好，它能自主完成从规划、比价到预订的全过程。\n• ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 开发一个AI旅行代理，你告诉它预算和偏好，它能自主完成从规划、比价到预订的全过程。\n• ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "AI Native决策：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "AI Native决策：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 选择方向B，即使技术挑战更大，因为它创造了全新的、基于意图的自动化体验。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 选择方向B，即使技术挑战更大，因为它创造了全新的、基于意图的自动化体验。",
+                "href": null
+              }
+            ]
           },
           "判断标准": {
             "id": "Uoy%3E",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "如果把AI核心抽离，这个产品或服务是否依然能够以任何形式存在？如果答案是“否”，它便是AI Native的。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "如果把AI核心抽离，这个产品或服务是否依然能够以任何形式存在？如果答案是“否”，它便是AI Native的。",
+                "href": null
+              }
+            ]
           },
           "关联检验": {
             "id": "VWK%5C",
@@ -210,20 +836,75 @@
             "id": "%60d%3F_",
             "type": "status",
             "status": {
-              "id": "9aeb43c4-b8e0-4837-8f0a-cbcd470fb561",
-              "name": "未开始",
-              "color": "default"
+              "id": "65b28f51-46b4-46a7-b021-57c3d2a35dd0",
+              "name": "进行中",
+              "color": "blue"
             }
           },
           "核心描述": {
             "id": "ttry",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "创造那些若无AI则无法存在、能彻底重塑用户工作流、并提供魔法般体验的全新产品与服务。我们追求的不是改良，而是创造新物种。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "创造那些若无AI则无法存在、能彻底重塑用户工作流、并提供魔法般体验的全新产品与服务。我们追求的不是改良，而是创造新物种。",
+                "href": null
+              }
+            ]
           },
           "关联目标": {
             "id": "vTPG",
             "type": "relation",
-            "relation": [],
+            "relation": [
+              {
+                "id": "238b6a1b-a406-80d1-bca7-ff53eb0fa071"
+              }
+            ],
+            "has_more": false
+          },
+          "AI 摘要": {
+            "id": "v_%3Bk",
+            "type": "rich_text",
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "追求创造全新、无法在没有AI的情况下存在的产品与服务，强调重塑用户工作流和提供魔法般体验。决策时应选择颠覆性的“AI Native”构想，而非简单的“AI赋能”改良。正面行为包括关注用户意图、设计惊艳体验和构建数据飞轮；负面行为则包括模仿人类低效流程和忽视伦理问题。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "追求创造全新、无法在没有AI的情况下存在的产品与服务，强调重塑用户工作流和提供魔法般体验。决策时应选择颠覆性的“AI Native”构想，而非简单的“AI赋能”改良。正面行为包括关注用户意图、设计惊艳体验和构建数据飞轮；负面行为则包括模仿人类低效流程和忽视伦理问题。",
+                "href": null
+              }
+            ]
+          },
+          "DB06: 每日日志": {
+            "id": "v~MI",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "238b6a1b-a406-805d-b9cd-c246f335d741"
+              }
+            ],
             "has_more": false
           },
           "价值观名称": {
@@ -257,7 +938,7 @@
         "object": "page",
         "id": "238b6a1b-a406-8019-9dcd-d90411f73fbd",
         "created_time": "2025-07-22T13:09:00.000Z",
-        "last_edited_time": "2025-07-22T13:32:00.000Z",
+        "last_edited_time": "2025-07-22T13:43:00.000Z",
         "created_by": {
           "object": "user",
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
@@ -281,17 +962,258 @@
           "来源故事": {
             "id": "%3ATCI",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": " 在与AI的深入探讨中，意识到真正的价值不在于用AI把旧事做得更快，而在于与AI合作，去探索和创造全新的可能性。为了将这一认知固化为行动准则，创立了此价值观。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 在与AI的深入探讨中，意识到真正的价值不在于用AI把旧事做得更快，而在于与AI合作，去探索和创造全新的可能性。为了将这一认知固化为行动准则，创立了此价值观。",
+                "href": null
+              }
+            ]
           },
           "权衡原则": {
             "id": "%3B%60N%3C",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "当面临“优化现有模式”和“探索颠覆性可能”的选择时，倾向于后者，即使后者短期内风险更高、路径更不明确。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "当面临“优化现有模式”和“探索颠覆性可能”的选择时，倾向于后者，即使后者短期内风险更高、路径更不明确。",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "用“可能性”的大小，来衡量“优先级”的高低。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "用“可能性”的大小，来衡量“优先级”的高低。",
+                "href": null
+              }
+            ]
           },
           "正面行为 (Do's)": {
             "id": "%3E%40SG",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "以提问开始：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "以提问开始：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 面对任何任务，首先思考：“如果让AI来主导，它会怎么做？”\n 2. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 面对任何任务，首先思考：“如果让AI来主导，它会怎么做？”\n 2. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "拥抱初稿：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "拥抱初稿：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 乐于让AI生成80分的草稿，将自己的精力聚焦于从80分到100分的创造性工作。\n 3. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 乐于让AI生成80分的草稿，将自己的精力聚焦于从80分到100分的创造性工作。\n 3. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "大胆实验：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "大胆实验：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 鼓励探索看似“疯狂”或“不切实际”的AI应用，并快速验证。\n 4. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 鼓励探索看似“疯狂”或“不切实际”的AI应用，并快速验证。\n 4. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "分享发现：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "分享发现：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 主动分享使用AI的新方法、新技巧和失败教训。\n 5. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 主动分享使用AI的新方法、新技巧和失败教训。\n 5. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "构建系统：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "构建系统：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 将有效的AI协作流程，沉淀为可复用的模板和指令。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 将有效的AI协作流程，沉淀为可复用的模板和指令。",
+                "href": null
+              }
+            ]
           },
           "类型": {
             "id": "%40j%40%7C",
@@ -302,15 +1224,212 @@
               "color": "yellow"
             }
           },
+          "按钮": {
+            "id": "Hzzx",
+            "type": "button",
+            "button": {}
+          },
           "创建日期": {
             "id": "ImL%3A",
             "type": "date",
-            "date": null
+            "date": {
+              "start": "2025-07-22",
+              "end": null,
+              "time_zone": null
+            }
           },
           "负面行为 (Don'ts)": {
             "id": "Lcws",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "浅尝辄止：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "浅尝辄止：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 只把AI当作拼写检查或文字润色工具。\n2. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 只把AI当作拼写检查或文字润色工具。\n2. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "路径依赖：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "路径依赖：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 先想好完美的解决方案，再试图把AI“塞”进去。\n3. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 先想好完美的解决方案，再试图把AI“塞”进去。\n3. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "盲目信任：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "盲目信任：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 不经批判性思考，就全盘接受AI的输出。\n4. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 不经批判性思考，就全盘接受AI的输出。\n4. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "害怕犯错：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "害怕犯错：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 因为AI的回答不完美，就放弃与其协作的尝试。\n5. ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 因为AI的回答不完美，就放弃与其协作的尝试。\n5. ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "知识孤岛：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "知识孤岛：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " 不自己摸索出的高效AI用法当成个人“秘籍”而不分享。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 不自己摸索出的高效AI用法当成个人“秘籍”而不分享。",
+                "href": null
+              }
+            ]
           },
           "优先级": {
             "id": "QIs%3A",
@@ -324,12 +1443,116 @@
           "决策场景": {
             "id": "UEdC",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "规划下一个季度的项目。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "规划下一个季度的项目。",
+                "href": null
+              }
+            ]
           },
           "判断标准": {
             "id": "Uoy%3E",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": " 一个想法或方案是否符合此价值观，关键看：它是在",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " 一个想法或方案是否符合此价值观，关键看：它是在",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "优化",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "优化",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "现有流程，还是在",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "现有流程，还是在",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "创造",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": true,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "创造",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "一个没有AI就不可能存在的新流程或新体验？",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "一个没有AI就不可能存在的新流程或新体验？",
+                "href": null
+              }
+            ]
           },
           "关联检验": {
             "id": "VWK%5C",
@@ -341,20 +1564,75 @@
             "id": "%60d%3F_",
             "type": "status",
             "status": {
-              "id": "9aeb43c4-b8e0-4837-8f0a-cbcd470fb561",
-              "name": "未开始",
-              "color": "default"
+              "id": "65b28f51-46b4-46a7-b021-57c3d2a35dd0",
+              "name": "进行中",
+              "color": "blue"
             }
           },
           "核心描述": {
             "id": "ttry",
             "type": "rich_text",
-            "rich_text": []
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "将AI视为重塑工作与创造的核心伙伴，而非仅仅是优化效率的工具。优先从AI的可能性出发，重新构想问题和解决方案。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "将AI视为重塑工作与创造的核心伙伴，而非仅仅是优化效率的工具。优先从AI的可能性出发，重新构想问题和解决方案。",
+                "href": null
+              }
+            ]
           },
           "关联目标": {
             "id": "vTPG",
             "type": "relation",
-            "relation": [],
+            "relation": [
+              {
+                "id": "238b6a1b-a406-8026-bca0-e0ec7a3c812a"
+              }
+            ],
+            "has_more": false
+          },
+          "AI 摘要": {
+            "id": "v_%3Bk",
+            "type": "rich_text",
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "将AI视为重塑工作与创造的核心伙伴，优先探索颠覆性可能而非仅优化现有流程。鼓励大胆实验和分享发现，同时避免浅尝辄止和盲目信任AI输出。此价值观旨在引导深度思考，帮助规划未来项目。",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "将AI视为重塑工作与创造的核心伙伴，优先探索颠覆性可能而非仅优化现有流程。鼓励大胆实验和分享发现，同时避免浅尝辄止和盲目信任AI输出。此价值观旨在引导深度思考，帮助规划未来项目。",
+                "href": null
+              }
+            ]
+          },
+          "DB06: 每日日志": {
+            "id": "v~MI",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "238b6a1b-a406-805d-b9cd-c246f335d741"
+              }
+            ],
             "has_more": false
           },
           "价值观名称": {
@@ -488,6 +1766,11 @@
               "color": "red"
             }
           },
+          "按钮": {
+            "id": "Hzzx",
+            "type": "button",
+            "button": {}
+          },
           "创建日期": {
             "id": "ImL%3A",
             "type": "date",
@@ -619,6 +1902,17 @@
             "relation": [],
             "has_more": false
           },
+          "AI 摘要": {
+            "id": "v_%3Bk",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "DB06: 每日日志": {
+            "id": "v~MI",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
           "价值观名称": {
             "id": "title",
             "type": "title",
@@ -688,6 +1982,11 @@
             "type": "select",
             "select": null
           },
+          "按钮": {
+            "id": "Hzzx",
+            "type": "button",
+            "button": {}
+          },
           "创建日期": {
             "id": "ImL%3A",
             "type": "date",
@@ -735,6 +2034,17 @@
           },
           "关联目标": {
             "id": "vTPG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "AI 摘要": {
+            "id": "v_%3Bk",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "DB06: 每日日志": {
+            "id": "v~MI",
             "type": "relation",
             "relation": [],
             "has_more": false
@@ -864,6 +2174,11 @@
             "id": "%40j%40%7C",
             "type": "select",
             "select": null
+          },
+          "按钮": {
+            "id": "Hzzx",
+            "type": "button",
+            "button": {}
           },
           "创建日期": {
             "id": "ImL%3A",
@@ -1002,6 +2317,17 @@
                 "id": "235b6a1b-a406-807b-9c43-c4f52963c39b"
               }
             ],
+            "has_more": false
+          },
+          "AI 摘要": {
+            "id": "v_%3Bk",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "DB06: 每日日志": {
+            "id": "v~MI",
+            "type": "relation",
+            "relation": [],
             "has_more": false
           },
           "价值观名称": {
@@ -1148,6 +2474,11 @@
               "color": "purple"
             }
           },
+          "按钮": {
+            "id": "Hzzx",
+            "type": "button",
+            "button": {}
+          },
           "创建日期": {
             "id": "ImL%3A",
             "type": "date",
@@ -1292,6 +2623,17 @@
             "relation": [],
             "has_more": false
           },
+          "AI 摘要": {
+            "id": "v_%3Bk",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "DB06: 每日日志": {
+            "id": "v~MI",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
           "价值观名称": {
             "id": "title",
             "type": "title",
@@ -1320,7 +2662,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:52.104Z"
+    "lastUpdated": "2025-07-22T14:19:33.815Z"
   },
   "价值观检验": {
     "name": "价值观检验",
@@ -1449,11 +2791,211 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.117Z"
+    "lastUpdated": "2025-07-22T14:19:33.740Z"
   },
   "目标库": {
     "name": "目标库",
     "data": [
+      {
+        "object": "page",
+        "id": "238b6a1b-a406-80d1-bca7-ff53eb0fa071",
+        "created_time": "2025-07-22T13:53:00.000Z",
+        "last_edited_time": "2025-07-22T13:53:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8195-8663-f66a8f7c415e"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "时间跨度": {
+            "id": "%3F%3F%7Br",
+            "type": "select",
+            "select": null
+          },
+          "逆相关 DB03a: 目标库": {
+            "id": "J%7DOC",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "成功标准（严格按照smart进行）": {
+            "id": "PzHW",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "目标进度": {
+            "id": "%5BAqU",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "关联价值观": {
+            "id": "k%40Mx",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "238b6a1b-a406-80a2-9797-d50998c3697f"
+              }
+            ],
+            "has_more": false
+          },
+          "关联项目": {
+            "id": "lt%3FF",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "领域": {
+            "id": "tPEz",
+            "type": "select",
+            "select": null
+          },
+          "影响范围": {
+            "id": "zd%3ES",
+            "type": "select",
+            "select": null
+          },
+          "理想状态": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "待定，还没想到",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "待定，还没想到",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/238b6a1ba40680d1bca7ff53eb0fa071",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "238b6a1b-a406-8026-bca0-e0ec7a3c812a",
+        "created_time": "2025-07-22T13:43:00.000Z",
+        "last_edited_time": "2025-07-22T13:43:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8195-8663-f66a8f7c415e"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "时间跨度": {
+            "id": "%3F%3F%7Br",
+            "type": "select",
+            "select": null
+          },
+          "逆相关 DB03a: 目标库": {
+            "id": "J%7DOC",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "成功标准（严格按照smart进行）": {
+            "id": "PzHW",
+            "type": "rich_text",
+            "rich_text": []
+          },
+          "目标进度": {
+            "id": "%5BAqU",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "关联价值观": {
+            "id": "k%40Mx",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "238b6a1b-a406-8019-9dcd-d90411f73fbd"
+              }
+            ],
+            "has_more": false
+          },
+          "关联项目": {
+            "id": "lt%3FF",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "领域": {
+            "id": "tPEz",
+            "type": "select",
+            "select": null
+          },
+          "影响范围": {
+            "id": "zd%3ES",
+            "type": "select",
+            "select": null
+          },
+          "理想状态": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "开启副业生涯",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "开启副业生涯",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/238b6a1ba4068026bca0e0ec7a3c812a",
+        "public_url": null
+      },
       {
         "object": "page",
         "id": "235b6a1b-a406-807b-9c43-c4f52963c39b",
@@ -1593,7 +3135,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.151Z"
+    "lastUpdated": "2025-07-22T14:19:33.995Z"
   },
   "项目库": {
     "name": "项目库",
@@ -2189,7 +3731,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.206Z"
+    "lastUpdated": "2025-07-22T14:19:33.792Z"
   },
   "行动库": {
     "name": "行动库",
@@ -4019,16 +5561,359 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.265Z"
+    "lastUpdated": "2025-07-22T14:19:34.024Z"
   },
   "每日日志": {
     "name": "每日日志",
     "data": [
       {
         "object": "page",
+        "id": "238b6a1b-a406-8031-a79e-f85435fcbccf",
+        "created_time": "2025-07-22T13:57:00.000Z",
+        "last_edited_time": "2025-07-22T14:01:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🎫"
+        },
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-81f6-bb1a-ef4d6b297e44"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "关联模型": {
+            "id": "%3DzvV",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联健康": {
+            "id": "%40HzL",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "238b6a1b-a406-805a-bf3d-c341174c50ab"
+              }
+            ],
+            "has_more": false
+          },
+          "关联行动": {
+            "id": "%40fmg",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "价值评分": {
+            "id": "A_n%3D",
+            "type": "number",
+            "number": 5
+          },
+          "关联财务": {
+            "id": "Cs%7C%5C",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "实际时长（分钟）": {
+            "id": "K%7BgM",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 40
+            }
+          },
+          "关联价值观": {
+            "id": "ZNp~",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联专注": {
+            "id": "aRxn",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "活动类别": {
+            "id": "amI%3B",
+            "type": "select",
+            "select": {
+              "id": "2e674925-b5f9-4067-9617-d05f92f01185",
+              "name": "散步",
+              "color": "red"
+            }
+          },
+          "专注质量": {
+            "id": "b%3AZA",
+            "type": "number",
+            "number": 2
+          },
+          "日期": {
+            "id": "braX",
+            "type": "date",
+            "date": {
+              "start": "2025-07-22",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联复盘": {
+            "id": "g%5Dtx",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "开始时间": {
+            "id": "p%3Fb%5D",
+            "type": "date",
+            "date": {
+              "start": "2025-07-22T18:20:00.000+08:00",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联互动": {
+            "id": "sN~q",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联知识点": {
+            "id": "t_TF",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "结束时间": {
+            "id": "u%3AWH",
+            "type": "date",
+            "date": {
+              "start": "2025-07-22T19:00:00.000+08:00",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联情绪 ": {
+            "id": "%7DX%3E%60",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "活动名称": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "散步",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "散步",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/238b6a1ba4068031a79ef85435fcbccf",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "238b6a1b-a406-805d-b9cd-c246f335d741",
+        "created_time": "2025-07-22T13:54:00.000Z",
+        "last_edited_time": "2025-07-22T13:57:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🎫"
+        },
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-81f6-bb1a-ef4d6b297e44"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "关联模型": {
+            "id": "%3DzvV",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联健康": {
+            "id": "%40HzL",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联行动": {
+            "id": "%40fmg",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "价值评分": {
+            "id": "A_n%3D",
+            "type": "number",
+            "number": 5
+          },
+          "关联财务": {
+            "id": "Cs%7C%5C",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "实际时长（分钟）": {
+            "id": "K%7BgM",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 480
+            }
+          },
+          "关联价值观": {
+            "id": "ZNp~",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "238b6a1b-a406-8019-9dcd-d90411f73fbd"
+              },
+              {
+                "id": "238b6a1b-a406-80a2-9797-d50998c3697f"
+              }
+            ],
+            "has_more": false
+          },
+          "关联专注": {
+            "id": "aRxn",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "活动类别": {
+            "id": "amI%3B",
+            "type": "select",
+            "select": {
+              "id": "f39575d2-1d7e-4ea9-83e1-b9903664dd3f",
+              "name": "学习提升",
+              "color": "yellow"
+            }
+          },
+          "专注质量": {
+            "id": "b%3AZA",
+            "type": "number",
+            "number": 3
+          },
+          "日期": {
+            "id": "braX",
+            "type": "date",
+            "date": {
+              "start": "2025-07-22",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联复盘": {
+            "id": "g%5Dtx",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "开始时间": {
+            "id": "p%3Fb%5D",
+            "type": "date",
+            "date": {
+              "start": "2025-07-22T14:00:00.000+08:00",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联互动": {
+            "id": "sN~q",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联知识点": {
+            "id": "t_TF",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "结束时间": {
+            "id": "u%3AWH",
+            "type": "date",
+            "date": {
+              "start": "2025-07-22T22:00:00.000+08:00",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联情绪 ": {
+            "id": "%7DX%3E%60",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "活动名称": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "构建个人成长系统数字版",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "构建个人成长系统数字版",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/238b6a1ba406805db9cdc246f335d741",
+        "public_url": null
+      },
+      {
+        "object": "page",
         "id": "238b6a1b-a406-805f-a301-f7aa64f53319",
         "created_time": "2025-07-22T04:30:00.000Z",
-        "last_edited_time": "2025-07-22T04:32:00.000Z",
+        "last_edited_time": "2025-07-22T13:56:00.000Z",
         "created_by": {
           "object": "user",
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
@@ -4098,6 +5983,12 @@
               "type": "number",
               "number": 200
             }
+          },
+          "关联价值观": {
+            "id": "ZNp~",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
           },
           "关联专注": {
             "id": "aRxn",
@@ -4267,6 +6158,12 @@
               "number": 227
             }
           },
+          "关联价值观": {
+            "id": "ZNp~",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
           "关联专注": {
             "id": "aRxn",
             "type": "relation",
@@ -4430,6 +6327,12 @@
               "type": "number",
               "number": 17
             }
+          },
+          "关联价值观": {
+            "id": "ZNp~",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
           },
           "关联专注": {
             "id": "aRxn",
@@ -4595,6 +6498,12 @@
               "number": 483
             }
           },
+          "关联价值观": {
+            "id": "ZNp~",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
           "关联专注": {
             "id": "aRxn",
             "type": "relation",
@@ -4759,6 +6668,12 @@
               "number": 16
             }
           },
+          "关联价值观": {
+            "id": "ZNp~",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
           "关联专注": {
             "id": "aRxn",
             "type": "relation",
@@ -4916,6 +6831,12 @@
               "number": 110
             }
           },
+          "关联价值观": {
+            "id": "ZNp~",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
           "关联专注": {
             "id": "aRxn",
             "type": "relation",
@@ -5015,7 +6936,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.146Z"
+    "lastUpdated": "2025-07-22T14:19:33.828Z"
   },
   "情绪记录": {
     "name": "情绪记录",
@@ -5159,7 +7080,7 @@
             "type": "formula",
             "formula": {
               "type": "number",
-              "number": 4196
+              "number": 4239
             }
           },
           "触发类型": {
@@ -5321,11 +7242,190 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.154Z"
+    "lastUpdated": "2025-07-22T14:19:33.766Z"
   },
   "健康日记": {
     "name": "健康日记",
     "data": [
+      {
+        "object": "page",
+        "id": "238b6a1b-a406-805a-bf3d-c341174c50ab",
+        "created_time": "2025-07-22T14:00:00.000Z",
+        "last_edited_time": "2025-07-22T14:00:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-81d6-8417-e04382f4a415"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "睡眠呼吸质量": {
+            "id": "%3B%3D~%60",
+            "type": "number",
+            "number": null
+          },
+          "运动类型": {
+            "id": "%3Dq%7Bz",
+            "type": "select",
+            "select": {
+              "id": "6ff953db-1c29-483a-ae78-196c5264e996",
+              "name": "散步",
+              "color": "yellow"
+            }
+          },
+          "冥想时长": {
+            "id": "%3E~us",
+            "type": "number",
+            "number": null
+          },
+          "平均血氧": {
+            "id": "%40sIp",
+            "type": "number",
+            "number": null
+          },
+          "冥想评分": {
+            "id": "LZZy",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "睡眠评分": {
+            "id": "LdNo",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "浅睡比例": {
+            "id": "TqcK",
+            "type": "number",
+            "number": null
+          },
+          "运动时长": {
+            "id": "TxJ~",
+            "type": "number",
+            "number": 40
+          },
+          "关联事件": {
+            "id": "U%3C%3B%7B",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "238b6a1b-a406-8031-a79e-f85435fcbccf"
+              }
+            ],
+            "has_more": false
+          },
+          "冥想类型": {
+            "id": "UAHv",
+            "type": "select",
+            "select": null
+          },
+          "睡眠时长": {
+            "id": "Uw%40%7D",
+            "type": "number",
+            "number": null
+          },
+          "快速眼动比例": {
+            "id": "%5E%5ESM",
+            "type": "number",
+            "number": null
+          },
+          "冥想后感受": {
+            "id": "aOF%7B",
+            "type": "select",
+            "select": null
+          },
+          "入睡时间": {
+            "id": "cvL%3F",
+            "type": "date",
+            "date": null
+          },
+          "起床时间": {
+            "id": "e%60sI",
+            "type": "date",
+            "date": null
+          },
+          "日期": {
+            "id": "ke%3At",
+            "type": "date",
+            "date": {
+              "start": "2025-07-22",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "运动评分": {
+            "id": "pvqo",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 47
+            }
+          },
+          "深睡比例": {
+            "id": "rnEZ",
+            "type": "number",
+            "number": null
+          },
+          "运动平均心率": {
+            "id": "wm%3CA",
+            "type": "number",
+            "number": 80
+          },
+          "精力水平": {
+            "id": "zzFL",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 14
+            }
+          },
+          "夜间清醒次数": {
+            "id": "%7Cc%3Eo",
+            "type": "number",
+            "number": null
+          },
+          "日志标题": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "@2025年7月22日 散步",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "@2025年7月22日 散步",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/2025-7-22-238b6a1ba406805abf3dc341174c50ab",
+        "public_url": null
+      },
       {
         "object": "page",
         "id": "238b6a1b-a406-81b5-8aa6-d3714283ab62",
@@ -6645,7 +8745,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.264Z"
+    "lastUpdated": "2025-07-22T14:19:33.814Z"
   },
   "注意力记录": {
     "name": "注意力记录",
@@ -6735,7 +8835,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.121Z"
+    "lastUpdated": "2025-07-22T14:19:34.367Z"
   },
   "创造记录": {
     "name": "创造记录",
@@ -6834,7 +8934,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.275Z"
+    "lastUpdated": "2025-07-22T14:19:34.334Z"
   },
   "互动记录": {
     "name": "互动记录",
@@ -7082,7 +9182,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.729Z"
+    "lastUpdated": "2025-07-22T14:19:33.754Z"
   },
   "财务记录": {
     "name": "财务记录",
@@ -7185,7 +9285,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.143Z"
+    "lastUpdated": "2025-07-22T14:19:33.993Z"
   },
   "成长复盘": {
     "name": "成长复盘",
@@ -7577,7 +9677,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:50.083Z"
+    "lastUpdated": "2025-07-22T14:19:33.791Z"
   },
   "欲望数据库": {
     "name": "欲望数据库",
@@ -7677,7 +9777,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.106Z"
+    "lastUpdated": "2025-07-22T14:19:33.752Z"
   },
   "知识库": {
     "name": "知识库",
@@ -7990,7 +10090,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:48.874Z"
+    "lastUpdated": "2025-07-22T14:19:34.034Z"
   },
   "思维模型": {
     "name": "思维模型",
@@ -8500,7 +10600,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:49.030Z"
+    "lastUpdated": "2025-07-22T14:19:33.752Z"
   },
   "关系网": {
     "name": "关系网",
@@ -8644,6 +10744,6 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T13:36:49.089Z"
+    "lastUpdated": "2025-07-22T14:19:33.766Z"
   }
 }
