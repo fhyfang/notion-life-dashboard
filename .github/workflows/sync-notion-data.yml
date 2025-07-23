@@ -25,6 +25,20 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        
+      - name: Verify @notionhq/client installation (DEBUG)
+        run: |
+          echo "Listing contents of node_modules/@notionhq/client:"
+          ls -F node_modules/@notionhq/client/ || true
+          echo "Listing contents of node_modules/@notionhq:"
+          ls -F node_modules/@notionhq/ || true
+          echo "Listing contents of node_modules:"
+          ls -F node_modules/ || true
+
+      - name: Sync data from Notion
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+        run: node scripts/sync-notion-data.js
 
       - name: Sync data from Notion
         env:
