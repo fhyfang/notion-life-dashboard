@@ -2671,7 +2671,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.295Z"
+    "lastUpdated": "2025-07-23T03:18:34.329Z"
   },
   "价值观检验": {
     "name": "价值观检验",
@@ -2800,7 +2800,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.292Z"
+    "lastUpdated": "2025-07-23T03:18:34.313Z"
   },
   "目标库": {
     "name": "目标库",
@@ -3293,7 +3293,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.707Z"
+    "lastUpdated": "2025-07-23T03:18:34.393Z"
   },
   "项目库": {
     "name": "项目库",
@@ -3302,7 +3302,7 @@
         "object": "page",
         "id": "239b6a1b-a406-8014-97c3-f68300195ff8",
         "created_time": "2025-07-23T01:05:00.000Z",
-        "last_edited_time": "2025-07-23T01:30:00.000Z",
+        "last_edited_time": "2025-07-23T02:46:00.000Z",
         "created_by": {
           "object": "user",
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
@@ -3341,6 +3341,15 @@
               },
               {
                 "id": "239b6a1b-a406-80c5-8c8b-c822c13430af"
+              },
+              {
+                "id": "239b6a1b-a406-80d9-a477-f4dcbc9b7bbd"
+              },
+              {
+                "id": "239b6a1b-a406-8011-bcad-cd2276399c36"
+              },
+              {
+                "id": "239b6a1b-a406-80cb-aa0f-c2f395df2f22"
               }
             ],
             "has_more": false
@@ -4133,11 +4142,515 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.401Z"
+    "lastUpdated": "2025-07-23T03:18:34.387Z"
   },
   "行动库": {
     "name": "行动库",
     "data": [
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-80cb-aa0f-c2f395df2f22",
+        "created_time": "2025-07-23T02:46:00.000Z",
+        "last_edited_time": "2025-07-23T02:46:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8170-9066-ffc71e397670"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "行动类型": {
+            "id": "%3AH%3Bg",
+            "type": "select",
+            "select": null
+          },
+          "关联项目": {
+            "id": "%3B_xO",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8014-97c3-f68300195ff8"
+              }
+            ],
+            "has_more": false
+          },
+          "实际投入时长（分钟）": {
+            "id": "%3FOo_",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "完成日期": {
+            "id": "D~cp",
+            "type": "date",
+            "date": null
+          },
+          "是否逾期": {
+            "id": "GB%3Bx",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": "🟢 正常"
+            }
+          },
+          "DB10: 互动记录": {
+            "id": "HS%7Cr",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "能量要求": {
+            "id": "HzGT",
+            "type": "select",
+            "select": null
+          },
+          "状态 2": {
+            "id": "SHjJ",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "DB03b: 项目库 2": {
+            "id": "YWJG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "预估时长": {
+            "id": "dCd%3E",
+            "type": "number",
+            "number": null
+          },
+          "截止日期": {
+            "id": "nkPv",
+            "type": "date",
+            "date": null
+          },
+          "实际时长": {
+            "id": "noJ%60",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "DB04: 每日日志": {
+            "id": "rUNa",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态 1": {
+            "id": "uu%7C%3F",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态": {
+            "id": "uxl%3D",
+            "type": "status",
+            "status": null
+          },
+          "关联日志": {
+            "id": "vKFR",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "创建日期": {
+            "id": "wSyQ",
+            "type": "date",
+            "date": null
+          },
+          "优先级": {
+            "id": "%7Cb%3DO",
+            "type": "select",
+            "select": null
+          },
+          "完成周期（天）": {
+            "id": "~OMH",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": ""
+            }
+          },
+          "行动描述": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "周度从非结构化数据中提取洞察（我的所有笔记和数据库）",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "周度从非结构化数据中提取洞察（我的所有笔记和数据库）",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/239b6a1ba40680cbaa0fc2f395df2f22",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-8011-bcad-cd2276399c36",
+        "created_time": "2025-07-23T02:45:00.000Z",
+        "last_edited_time": "2025-07-23T02:45:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8170-9066-ffc71e397670"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "行动类型": {
+            "id": "%3AH%3Bg",
+            "type": "select",
+            "select": null
+          },
+          "关联项目": {
+            "id": "%3B_xO",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8014-97c3-f68300195ff8"
+              }
+            ],
+            "has_more": false
+          },
+          "实际投入时长（分钟）": {
+            "id": "%3FOo_",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "完成日期": {
+            "id": "D~cp",
+            "type": "date",
+            "date": null
+          },
+          "是否逾期": {
+            "id": "GB%3Bx",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": "🟢 正常"
+            }
+          },
+          "DB10: 互动记录": {
+            "id": "HS%7Cr",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "能量要求": {
+            "id": "HzGT",
+            "type": "select",
+            "select": null
+          },
+          "状态 2": {
+            "id": "SHjJ",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "DB03b: 项目库 2": {
+            "id": "YWJG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "预估时长": {
+            "id": "dCd%3E",
+            "type": "number",
+            "number": null
+          },
+          "截止日期": {
+            "id": "nkPv",
+            "type": "date",
+            "date": null
+          },
+          "实际时长": {
+            "id": "noJ%60",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "DB04: 每日日志": {
+            "id": "rUNa",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态 1": {
+            "id": "uu%7C%3F",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态": {
+            "id": "uxl%3D",
+            "type": "status",
+            "status": null
+          },
+          "关联日志": {
+            "id": "vKFR",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "创建日期": {
+            "id": "wSyQ",
+            "type": "date",
+            "date": null
+          },
+          "优先级": {
+            "id": "%7Cb%3DO",
+            "type": "select",
+            "select": null
+          },
+          "完成周期（天）": {
+            "id": "~OMH",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": ""
+            }
+          },
+          "行动描述": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "每周花3个小时优化prompt",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "每周花3个小时优化prompt",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/3-prompt-239b6a1ba4068011bcadcd2276399c36",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-80d9-a477-f4dcbc9b7bbd",
+        "created_time": "2025-07-23T02:45:00.000Z",
+        "last_edited_time": "2025-07-23T02:45:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8170-9066-ffc71e397670"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "行动类型": {
+            "id": "%3AH%3Bg",
+            "type": "select",
+            "select": null
+          },
+          "关联项目": {
+            "id": "%3B_xO",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8014-97c3-f68300195ff8"
+              }
+            ],
+            "has_more": false
+          },
+          "实际投入时长（分钟）": {
+            "id": "%3FOo_",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "完成日期": {
+            "id": "D~cp",
+            "type": "date",
+            "date": null
+          },
+          "是否逾期": {
+            "id": "GB%3Bx",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": "🟢 正常"
+            }
+          },
+          "DB10: 互动记录": {
+            "id": "HS%7Cr",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "能量要求": {
+            "id": "HzGT",
+            "type": "select",
+            "select": null
+          },
+          "状态 2": {
+            "id": "SHjJ",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "DB03b: 项目库 2": {
+            "id": "YWJG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "预估时长": {
+            "id": "dCd%3E",
+            "type": "number",
+            "number": null
+          },
+          "截止日期": {
+            "id": "nkPv",
+            "type": "date",
+            "date": null
+          },
+          "实际时长": {
+            "id": "noJ%60",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "DB04: 每日日志": {
+            "id": "rUNa",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态 1": {
+            "id": "uu%7C%3F",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态": {
+            "id": "uxl%3D",
+            "type": "status",
+            "status": null
+          },
+          "关联日志": {
+            "id": "vKFR",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "创建日期": {
+            "id": "wSyQ",
+            "type": "date",
+            "date": null
+          },
+          "优先级": {
+            "id": "%7Cb%3DO",
+            "type": "select",
+            "select": null
+          },
+          "完成周期（天）": {
+            "id": "~OMH",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": ""
+            }
+          },
+          "行动描述": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "每周花1个小时测试AI新工具",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "每周花1个小时测试AI新工具",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/1-AI-239b6a1ba40680d9a477f4dcbc9b7bbd",
+        "public_url": null
+      },
       {
         "object": "page",
         "id": "239b6a1b-a406-80c5-8c8b-c822c13430af",
@@ -6803,11 +7316,181 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.367Z"
+    "lastUpdated": "2025-07-23T03:18:35.200Z"
   },
   "每日日志": {
     "name": "每日日志",
     "data": [
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-807d-9a97-c381f4c1f4a5",
+        "created_time": "2025-07-23T01:47:00.000Z",
+        "last_edited_time": "2025-07-23T01:47:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🎫"
+        },
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-81f6-bb1a-ef4d6b297e44"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "关联模型": {
+            "id": "%3DzvV",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联健康": {
+            "id": "%40HzL",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8198-aa9a-f21b8b744c76"
+              }
+            ],
+            "has_more": false
+          },
+          "关联行动": {
+            "id": "%40fmg",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "价值评分": {
+            "id": "A_n%3D",
+            "type": "number",
+            "number": null
+          },
+          "关联财务": {
+            "id": "Cs%7C%5C",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "实际时长（分钟）": {
+            "id": "K%7BgM",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 393
+            }
+          },
+          "关联价值观": {
+            "id": "ZNp~",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联专注": {
+            "id": "aRxn",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "活动类别": {
+            "id": "amI%3B",
+            "type": "select",
+            "select": {
+              "id": "d6b131ab-beca-498f-8eaf-f414903c320f",
+              "name": "睡眠",
+              "color": "yellow"
+            }
+          },
+          "专注质量": {
+            "id": "b%3AZA",
+            "type": "number",
+            "number": null
+          },
+          "日期": {
+            "id": "braX",
+            "type": "date",
+            "date": {
+              "start": "2025-07-23",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联复盘": {
+            "id": "g%5Dtx",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "开始时间": {
+            "id": "p%3Fb%5D",
+            "type": "date",
+            "date": {
+              "start": "2025-07-23T00:22:00.000+08:00",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联互动": {
+            "id": "sN~q",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联知识点": {
+            "id": "t_TF",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "结束时间": {
+            "id": "u%3AWH",
+            "type": "date",
+            "date": {
+              "start": "2025-07-23T06:55:00.000+08:00",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联情绪 ": {
+            "id": "%7DX%3E%60",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "活动名称": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "睡觉",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "睡觉",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/239b6a1ba406807d9a97c381f4c1f4a5",
+        "public_url": null
+      },
       {
         "object": "page",
         "id": "239b6a1b-a406-801c-bf44-dca8f1d8d160",
@@ -6976,176 +7659,6 @@
           }
         },
         "url": "https://www.notion.so/AI-239b6a1ba406801cbf44dca8f1d8d160",
-        "public_url": null
-      },
-      {
-        "object": "page",
-        "id": "238b6a1b-a406-8017-9ebe-d8f37585d46f",
-        "created_time": "2025-07-22T22:56:00.000Z",
-        "last_edited_time": "2025-07-22T22:59:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
-        },
-        "cover": null,
-        "icon": {
-          "type": "emoji",
-          "emoji": "🎫"
-        },
-        "parent": {
-          "type": "database_id",
-          "database_id": "235b6a1b-a406-81f6-bb1a-ef4d6b297e44"
-        },
-        "archived": false,
-        "in_trash": false,
-        "properties": {
-          "关联模型": {
-            "id": "%3DzvV",
-            "type": "relation",
-            "relation": [],
-            "has_more": false
-          },
-          "关联健康": {
-            "id": "%40HzL",
-            "type": "relation",
-            "relation": [
-              {
-                "id": "238b6a1b-a406-816e-a308-ea0eadd910fd"
-              }
-            ],
-            "has_more": false
-          },
-          "关联行动": {
-            "id": "%40fmg",
-            "type": "relation",
-            "relation": [],
-            "has_more": false
-          },
-          "价值评分": {
-            "id": "A_n%3D",
-            "type": "number",
-            "number": null
-          },
-          "关联财务": {
-            "id": "Cs%7C%5C",
-            "type": "relation",
-            "relation": [],
-            "has_more": false
-          },
-          "实际时长（分钟）": {
-            "id": "K%7BgM",
-            "type": "formula",
-            "formula": {
-              "type": "number",
-              "number": 393
-            }
-          },
-          "关联价值观": {
-            "id": "ZNp~",
-            "type": "relation",
-            "relation": [],
-            "has_more": false
-          },
-          "关联专注": {
-            "id": "aRxn",
-            "type": "relation",
-            "relation": [],
-            "has_more": false
-          },
-          "活动类别": {
-            "id": "amI%3B",
-            "type": "select",
-            "select": {
-              "id": "d6b131ab-beca-498f-8eaf-f414903c320f",
-              "name": "睡眠",
-              "color": "yellow"
-            }
-          },
-          "专注质量": {
-            "id": "b%3AZA",
-            "type": "number",
-            "number": null
-          },
-          "日期": {
-            "id": "braX",
-            "type": "date",
-            "date": {
-              "start": "2025-07-23",
-              "end": null,
-              "time_zone": null
-            }
-          },
-          "关联复盘": {
-            "id": "g%5Dtx",
-            "type": "relation",
-            "relation": [],
-            "has_more": false
-          },
-          "开始时间": {
-            "id": "p%3Fb%5D",
-            "type": "date",
-            "date": {
-              "start": "2025-07-23T00:22:00.000+08:00",
-              "end": null,
-              "time_zone": null
-            }
-          },
-          "关联互动": {
-            "id": "sN~q",
-            "type": "relation",
-            "relation": [],
-            "has_more": false
-          },
-          "关联知识点": {
-            "id": "t_TF",
-            "type": "relation",
-            "relation": [],
-            "has_more": false
-          },
-          "结束时间": {
-            "id": "u%3AWH",
-            "type": "date",
-            "date": {
-              "start": "2025-07-23T06:55:00.000+08:00",
-              "end": null,
-              "time_zone": null
-            }
-          },
-          "关联情绪 ": {
-            "id": "%7DX%3E%60",
-            "type": "relation",
-            "relation": [],
-            "has_more": false
-          },
-          "活动名称": {
-            "id": "title",
-            "type": "title",
-            "title": [
-              {
-                "type": "text",
-                "text": {
-                  "content": "睡觉",
-                  "link": null
-                },
-                "annotations": {
-                  "bold": false,
-                  "italic": false,
-                  "strikethrough": false,
-                  "underline": false,
-                  "code": false,
-                  "color": "default"
-                },
-                "plain_text": "睡觉",
-                "href": null
-              }
-            ]
-          }
-        },
-        "url": "https://www.notion.so/238b6a1ba40680179ebed8f37585d46f",
         "public_url": null
       },
       {
@@ -8518,7 +9031,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.369Z"
+    "lastUpdated": "2025-07-23T03:18:34.626Z"
   },
   "情绪记录": {
     "name": "情绪记录",
@@ -8662,7 +9175,7 @@
             "type": "formula",
             "formula": {
               "type": "number",
-              "number": 4919
+              "number": 5018
             }
           },
           "触发类型": {
@@ -8824,11 +9337,245 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.275Z"
+    "lastUpdated": "2025-07-23T03:18:34.327Z"
   },
   "健康日记": {
     "name": "健康日记",
     "data": [
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-8198-aa9a-f21b8b744c76",
+        "created_time": "2025-07-23T01:47:00.000Z",
+        "last_edited_time": "2025-07-23T01:48:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "00000000-0000-0000-0000-000000000003"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-81d6-8417-e04382f4a415"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "睡眠呼吸质量": {
+            "id": "%3B%3D~%60",
+            "type": "number",
+            "number": 0.97
+          },
+          "运动类型": {
+            "id": "%3Dq%7Bz",
+            "type": "select",
+            "select": null
+          },
+          "冥想时长": {
+            "id": "%3E~us",
+            "type": "number",
+            "number": null
+          },
+          "平均血氧": {
+            "id": "%40sIp",
+            "type": "number",
+            "number": 0.97
+          },
+          "冥想评分": {
+            "id": "LZZy",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "睡眠评分": {
+            "id": "LdNo",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 26
+            }
+          },
+          "浅睡比例": {
+            "id": "TqcK",
+            "type": "number",
+            "number": 0.55
+          },
+          "运动时长": {
+            "id": "TxJ~",
+            "type": "number",
+            "number": null
+          },
+          "关联事件": {
+            "id": "U%3C%3B%7B",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-807d-9a97-c381f4c1f4a5"
+              }
+            ],
+            "has_more": false
+          },
+          "冥想类型": {
+            "id": "UAHv",
+            "type": "select",
+            "select": null
+          },
+          "睡眠时长": {
+            "id": "Uw%40%7D",
+            "type": "number",
+            "number": 393
+          },
+          "快速眼动比例": {
+            "id": "%5E%5ESM",
+            "type": "number",
+            "number": 0.1
+          },
+          "冥想后感受": {
+            "id": "aOF%7B",
+            "type": "select",
+            "select": null
+          },
+          "入睡时间": {
+            "id": "cvL%3F",
+            "type": "date",
+            "date": {
+              "start": "2025-07-23T00:22:00.000+08:00",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "起床时间": {
+            "id": "e%60sI",
+            "type": "date",
+            "date": {
+              "start": "2025-07-23T06:55:00.000+08:00",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "日期": {
+            "id": "ke%3At",
+            "type": "date",
+            "date": null
+          },
+          "运动评分": {
+            "id": "pvqo",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "深睡比例": {
+            "id": "rnEZ",
+            "type": "number",
+            "number": 0.35
+          },
+          "运动平均心率": {
+            "id": "wm%3CA",
+            "type": "number",
+            "number": null
+          },
+          "精力水平": {
+            "id": "zzFL",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 13
+            }
+          },
+          "夜间清醒次数": {
+            "id": "%7Cc%3Eo",
+            "type": "number",
+            "number": 0
+          },
+          "日志标题": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "mention",
+                "mention": {
+                  "type": "date",
+                  "date": {
+                    "start": "2025-07-23",
+                    "end": null,
+                    "time_zone": null
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "2025-07-23",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " ",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "睡觉",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "睡觉",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": " ",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": " ",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/239b6a1ba4068198aa9af21b8b744c76",
+        "public_url": null
+      },
       {
         "object": "page",
         "id": "238b6a1b-a406-816e-a308-ea0eadd910fd",
@@ -8900,11 +9647,7 @@
           "关联事件": {
             "id": "U%3C%3B%7B",
             "type": "relation",
-            "relation": [
-              {
-                "id": "238b6a1b-a406-8017-9ebe-d8f37585d46f"
-              }
-            ],
+            "relation": [],
             "has_more": false
           },
           "冥想类型": {
@@ -10557,7 +11300,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.343Z"
+    "lastUpdated": "2025-07-23T03:18:34.450Z"
   },
   "注意力记录": {
     "name": "注意力记录",
@@ -10647,7 +11390,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.364Z"
+    "lastUpdated": "2025-07-23T03:18:34.438Z"
   },
   "创造记录": {
     "name": "创造记录",
@@ -10746,7 +11489,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.372Z"
+    "lastUpdated": "2025-07-23T03:18:34.311Z"
   },
   "互动记录": {
     "name": "互动记录",
@@ -10994,7 +11737,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.294Z"
+    "lastUpdated": "2025-07-23T03:18:34.372Z"
   },
   "财务记录": {
     "name": "财务记录",
@@ -11097,7 +11840,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.620Z"
+    "lastUpdated": "2025-07-23T03:18:34.512Z"
   },
   "成长复盘": {
     "name": "成长复盘",
@@ -11489,7 +12232,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.374Z"
+    "lastUpdated": "2025-07-23T03:18:34.381Z"
   },
   "欲望数据库": {
     "name": "欲望数据库",
@@ -11589,7 +12332,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.368Z"
+    "lastUpdated": "2025-07-23T03:18:34.333Z"
   },
   "知识库": {
     "name": "知识库",
@@ -11902,7 +12645,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:04.762Z"
+    "lastUpdated": "2025-07-23T03:18:34.392Z"
   },
   "思维模型": {
     "name": "思维模型",
@@ -12412,7 +13155,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.322Z"
+    "lastUpdated": "2025-07-23T03:18:47.774Z"
   },
   "关系网": {
     "name": "关系网",
@@ -12556,6 +13299,6 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-23T01:39:02.275Z"
+    "lastUpdated": "2025-07-23T03:18:34.310Z"
   }
 }
