@@ -1,4 +1,4 @@
-import type { DatabaseName } from './databases';
+const responseimport type { DatabaseName } from './databases';
 
 export interface NotionData {
   [key: string]: {
@@ -19,7 +19,7 @@ export async function loadNotionData(): Promise<NotionData> {
   lastFetchPromise = (async () => {
     try {
       // The base path is handled by vite.config.js, so we can use a relative path.
-      const response = await fetch('notion-data.json'); 
+      const response = await fetch('data/notion-data.json'); 
       if (!response.ok) throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
       
       const data = await response.json();
