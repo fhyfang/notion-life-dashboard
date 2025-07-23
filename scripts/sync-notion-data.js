@@ -1,17 +1,15 @@
 import { Client } from '@notionhq/client';
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+if (!process.env.NOTION_API_KEY) {
+  throw new Error('NOTION_API_KEY environment variable is not set.');
+}
 
-// 从环境变量获取 Notion API 密钥
 const notion = new Client({
   auth: process.env.NOTION_API_KEY,
 });
 
-// 数据库配置
 const DATABASES = {
   价值观: '235b6a1ba40681369b6cf6dc2ddd4aee',
   价值观检验: '235b6a1ba40681299abaffe6f8c0cf2a',
@@ -32,55 +30,58 @@ const DATABASES = {
   关系网: '235b6a1ba40681e49ce5debe17b5262c'
 };
 
-// 获取数据库内容
+async function fetchAllPages(databaseId) {
+  let results = [];
+  let hasMore = true;
+  let startCursor = undefined;
+  while (hasMore) {
+    const response = await notion.databases.query({
+      database_id: databaseId,
+      start_cursor: startCursor,
+      page_size: 100,
+    });
+    results = results.concat(response.results);
+    hasMore = response.has_more;
+    startCursor = response.next_cursor;
+  }
+  return results;
+}
+
 async function fetchDatabase(name, databaseId) {
   try {
     console.log(`Fetching ${name}...`);
-    const response = await notion.databases.query({
-      database_id: databaseId,
-      page_size: 100,
-    });
-    return {
-      name,
-      data: response.results,
-      lastUpdated: new Date().toISOString()
-    };
+    const results = await fetchAllPages(databaseId);
+    console.log(`Fetched ${results.length} items from ${name}.`);
+    return { name, data: results, lastUpdated: new Date().toISOString() };
   } catch (error) {
-    console.error(`Error fetching ${name}:`, error.message);
-    return {
-      name,
-      data: [],
-      error: error.message,
-      lastUpdated: new Date().toISOString()
-    };
+    console.error(`Error fetching ${name}:`, error.body || error.message);
+    return { name, data: [], error: error.message, lastUpdated: new Date().toISOString() };
   }
 }
 
-// 主函数
 async function syncAllData() {
   console.log('Starting Notion data sync...');
-  
   const results = {};
-  
-  // 并发获取所有数据库
-  const promises = Object.entries(DATABASES).map(([name, id]) => 
-    fetchDatabase(name, id)
-  );
-  
+  const promises = Object.entries(DATABASES).map(([name, id]) => fetchDatabase(name, id));
   const dataResults = await Promise.all(promises);
   
-  // 组织数据
   dataResults.forEach(result => {
-    results[result.name] = result;
+    results[result.name] = {
+      name: result.name,
+      data: result.data,
+      lastUpdated: result.lastUpdated,
+      ...(result.error && { error: result.error })
+    };
   });
   
-  // 保存到文件
-  const outputPath = path.join(__dirname, '..', 'public', 'data', 'notion-data.json');
+  const publicDir = path.join(process.cwd(), 'public');
+  if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir);
+
+  const outputPath = path.join(publicDir, 'notion-data.json');
   fs.writeFileSync(outputPath, JSON.stringify(results, null, 2));
   
   console.log(`Data saved to ${outputPath}`);
   console.log(`Sync completed at ${new Date().toISOString()}`);
 }
 
-// 运行同步
 syncAllData().catch(console.error);
