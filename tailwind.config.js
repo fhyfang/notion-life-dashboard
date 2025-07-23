@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'notion-bg': '#191919',
-        'notion-card': '#252525',
-        'notion-text': '#e1e1e0',
-        'notion-secondary': '#9b9a97',
-        'notion-accent': '#2eaadc',
+        'notion-bg': '#F7F7F7', // 主背景色
+        'notion-card': '#FFFFFF', // 卡片背景
+        'notion-text': '#191919', // 主要文字
+        'notion-secondary': '#9b9a97', // 次要文字
+        'notion-accent': '#2eaadc', // 强调色
       }
     },
   },
