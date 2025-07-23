@@ -1,21 +1,31 @@
-import { useState, useEffect } from 'react';
-import TenThousandDaysCountdownEnhanced from './components/TenThousandDaysCountdownEnhanced';
-import NavigationSystemEnhanced from './components/NavigationSystemEnhanced';
-import ExecutionCenter from './components/ExecutionCenter';
-import GoalSystem from './components/GoalSystem';
-import ResourceSystem from './components/ResourceSystem';
-import DeepAnalysisNav from './components/DeepAnalysisNav';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { getLastUpdateTime } from './services/dataLoader';
 import { motion } from 'framer-motion';
 import { CheckCircle, Home } from 'lucide-react';
-import EnergyAnalysis from './components/EnergyAnalysis';
-import TimeAnalysis from './components/TimeAnalysis';
-import SkillsAnalysis from './components/SkillsAnalysis';
-import RelationshipsAnalysis from './components/RelationshipsAnalysis';
-import MetaLearningAnalysis from './components/MetaLearningAnalysis';
-import WeeklyReview from './components/WeeklyReview';
+
+// 使用动态导入优化代码分割
+const TenThousandDaysCountdownEnhanced = lazy(() => import('./components/TenThousandDaysCountdownEnhanced'));
+const NavigationSystemEnhanced = lazy(() => import('./components/NavigationSystemEnhanced'));
+const ExecutionCenter = lazy(() => import('./components/ExecutionCenter'));
+const GoalSystem = lazy(() => import('./components/GoalSystem'));
+const ResourceSystem = lazy(() => import('./components/ResourceSystem'));
+const DeepAnalysisNav = lazy(() => import('./components/DeepAnalysisNav'));
+const EnergyAnalysis = lazy(() => import('./components/EnergyAnalysis'));
+const TimeAnalysis = lazy(() => import('./components/TimeAnalysis'));
+const SkillsAnalysis = lazy(() => import('./components/SkillsAnalysis'));
+const RelationshipsAnalysis = lazy(() => import('./components/RelationshipsAnalysis'));
+const MetaLearningAnalysis = lazy(() => import('./components/MetaLearningAnalysis'));
+const WeeklyReview = lazy(() => import('./components/WeeklyReview'));
 
 type Page = 'dashboard' | 'energy' | 'time' | 'skills' | 'relationships' | 'metalearning' | 'weekly';
+
+// 加载组件
+const LoadingSpinner = () => (
+  <div className="flex items-center justify-center p-8">
+    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
+    <span className="ml-3 text-gray-600">加载中...</span>
+  </div>
+);
 
 function App() {
   const [lastUpdatedTime, setLastUpdatedTime] = useState<string | null>(null);
@@ -87,7 +97,9 @@ function App() {
             返回主仪表盘
           </motion.button>
         )}
-        {renderContent()}
+        <Suspense fallback={<LoadingSpinner />}>
+          {renderContent()}
+        </Suspense>
         <motion.footer initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="mt-12 py-6 text-center text-sm text-gray-500">
           <div className="flex items-center justify-center space-x-4">
             <span>最后同步: {lastUpdatedTime ?? '加载中...'} | 数据来源: Notion API</span>

@@ -29,6 +29,12 @@ interface Vitals {
   exercise: number
 }
 
+interface Goal {
+  name: string
+  progress: number
+  timeSpan: string
+}
+
 const ExecutionCenter = () => {
   const [tasks, setTasks] = useState<Task[]>([])
   const [logs, setLogs] = useState<LogEntry[]>([])
@@ -39,6 +45,7 @@ const ExecutionCenter = () => {
     meditation: 0,
     exercise: 0
   })
+  const [goals, setGoals] = useState<Goal[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -85,6 +92,32 @@ const ExecutionCenter = () => {
       // 获取生命体征数据
       const healthData = await getDatabaseData('健康日记')
       const emotionData = await getDatabaseData('情绪记录')
+      
+      // 获取目标数据
+      const goalsData = await getDatabaseData('目标库')
+      const currentYear = new Date().getFullYear()
+      const currentQuarter = Math.floor((new Date().getMonth() + 3) / 3)
+      
+      const activeGoals = goalsData
+        .filter((item: any) => {
+          const status = item.properties["状态"]?.status?.name
+          const timeSpan = item.properties["时间跨度"]?.select?.name
+          // 只显示进行中的、本年或本季度的目标
+          return (status === '进行中' || status === 'In Progress') && 
+                 (timeSpan === `${currentYear}年` || 
+                  timeSpan === `${currentYear}Q${currentQuarter}` ||
+                  timeSpan === '本年' || 
+                  timeSpan === '本季' ||
+                  timeSpan === '季度目标')
+        })
+        .map((item: any) => ({
+          name: item.properties["理想状态"]?.title[0]?.plain_text || '未命名目标',
+          progress: Math.round((item.properties["目标进度"]?.rollup?.number || 0) * 100),
+          timeSpan: item.properties["时间跨度"]?.select?.name || ''
+        }))
+        .slice(0, 3) // 只显示前3个目标
+      
+      setGoals(activeGoals)
       
       // 获取最新的健康数据
       if (healthData.length > 0) {
@@ -299,6 +332,28 @@ const ExecutionCenter = () => {
               <span className="text-lg font-semibold text-green-600">{vitals.exercise}/10</span>
             </div>
           </div>
+          
+          {/* 目标进度 */}
+          {goals.length > 0 && (
+            <div className="border-t pt-4 space-y-3">
+              <h4 className="text-sm font-semibold text-gray-700 mb-2">核心目标</h4>
+              {goals.map((goal, index) => (
+                <div key={index} className="space-y-1">
+                  <div className="flex justify-between items-start">
+                    <span className="text-xs text-gray-600 flex-1 mr-2">{goal.name}</span>
+                    <span className="text-xs font-semibold text-indigo-600">{goal.progress}%</span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-1.5">
+                    <div 
+                      className="bg-gradient-to-r from-indigo-400 to-indigo-600 h-1.5 rounded-full"
+                      style={{ width: `${goal.progress}%` }}
+                    />
+                  </div>
+                  <span className="text-xs text-gray-500">{goal.timeSpan}</span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </motion.div>
     </div>
