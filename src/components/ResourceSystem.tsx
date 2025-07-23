@@ -58,7 +58,6 @@ const ResourceSystem = () => {
   // 从财务数据中计算本月收入和支出
   let monthlyIncome = 0
   let monthlyExpense = 0
-  let investmentTotal = 0
   
   financialData.forEach(item => {
     const date = item.properties["日期"]?.date?.start
@@ -74,10 +73,6 @@ const ResourceSystem = () => {
           monthlyExpense += amount
         }
       }
-    }
-    
-    if (type === '投资') {
-      investmentTotal += amount
     }
   })
   

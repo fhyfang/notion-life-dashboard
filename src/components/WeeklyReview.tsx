@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { getDatabaseData } from '../../services/dataLoader';
 import { motion } from 'framer-motion';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
-import { Award, Brain, CheckCircle, Clock, DollarSign, Droplets, Heart, Sparkles, TrendingUp, Users } from 'lucide-react';
+import { Droplets, Clock, TrendingUp } from 'lucide-react';
 
 const getWeekNumber = (d: Date) => {
   d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));

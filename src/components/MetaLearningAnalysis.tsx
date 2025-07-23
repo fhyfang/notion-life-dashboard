@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getDatabaseData } from '../../services/dataLoader';
 import { motion } from 'framer-motion';
-import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend, PieChart, Pie, Cell } from 'recharts';
+import { RadarChart, PolarGrid, PolarAngleAxis, Radar, ResponsiveContainer, Tooltip, Legend, PieChart, Pie, Cell } from 'recharts';
 import { Award, BrainCircuit, Lightbulb, TrendingUp } from 'lucide-react';
 
 // Helper to get plain text from Notion rich text

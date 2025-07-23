@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { getDatabaseData } from '../../services/dataLoader';
 import { motion } from 'framer-motion';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Legend, ReferenceLine } from 'recharts';
-import { Clock, BarChart2, CheckCircle, AlertCircle } from 'lucide-react';
+import { Clock, BarChart2, AlertCircle } from 'lucide-react';
 
 // Helper to get plain text from Notion rich text
 const getPlainText = (richText: any[] | undefined) => richText?.map(t => t.plain_text).join('') || '';

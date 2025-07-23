@@ -1,17 +1,14 @@
-const AnalysisCardimport { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getDatabaseData } from '../../services/dataLoader';
 import { motion } from 'framer-motion';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ComposedChart, Bar, BarChart } from 'recharts';
 import { Zap, Activity, Brain, BedDouble } from 'lucide-react';
-
-// Helper to get plain text from Notion rich text
-const getPlainText = (richText: any[] | undefined) => richText?.map(t => t.plain_text).join('') || '';
+import type { HealthDiaryItem, EmotionRecordItem, DailyEnergyData, EmotionTrigger } from '../../types/notion';
 
 const AnalysisCard = ({ title, children, icon: Icon, color }: { title: string, children: React.ReactNode, icon: React.ElementType, color: string }) => (
     <div className="bg-white rounded-lg shadow-sm p-6">
         <div className="flex items-center mb-4">
--           <Icon className={`w-6 h-6 mr-3 ${color}`} />
-+           <Icon className="w-6 h-6 mr-3" style={{ color }} />
+            <Icon className="w-6 h-6 mr-3" style={{ color }} />
             <h3 className="text-lg font-bold" style={{ color }}>{title}</h3>
         </div>
         {children}
@@ -19,20 +16,20 @@ const AnalysisCard = ({ title, children, icon: Icon, color }: { title: string, c
 );
 
 const EnergyAnalysis = () => {
-    const [dailyData, setDailyData] = useState<any[]>([]);
-    const [emotionTriggers, setEmotionTriggers] = useState<any[]>([]);
+    const [dailyData, setDailyData] = useState<DailyEnergyData[]>([]);
+    const [emotionTriggers, setEmotionTriggers] = useState<EmotionTrigger[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const processData = async () => {
             setLoading(true);
-            const healthData = await getDatabaseData('健康日记');
-            const emotionData = await getDatabaseData('情绪记录');
+            const healthData = await getDatabaseData('健康日记') as HealthDiaryItem[];
+            const emotionData = await getDatabaseData('情绪记录') as EmotionRecordItem[];
 
             const thirtyDaysAgo = new Date();
             thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
-            const dataMap = new Map();
+            const dataMap = new Map<string, { date: string; sleep: number | null; exercise: number | null; meditation: number | null; energy: number | null; mood: number[]; avgMood?: number | null }>();
 
             // Initialize map with last 30 days
             for (let i = 0; i < 30; i++) {
@@ -62,7 +59,7 @@ const EnergyAnalysis = () => {
                  if (date && new Date(date) >= thirtyDaysAgo) {
                     const moodScore = parseInt((item.properties["当前心情评分"]?.select?.name || '0').replace(' 分', ''));
                     if (dataMap.has(date)) {
-                        dataMap.get(date).mood.push(moodScore);
+                        dataMap.get(date)!.mood.push(moodScore);
                     }
                     const trigger = item.properties["触发类型"]?.select?.name;
                     if (trigger) {
@@ -78,13 +75,15 @@ const EnergyAnalysis = () => {
                 } else {
                     value.avgMood = null;
                 }
-                delete value.mood;
+                delete (value as any).mood;
             });
             
             const formattedTriggers = Object.entries(triggerCounts).map(([name, count]) => ({ name, count }));
             setEmotionTriggers(formattedTriggers);
 
-            const sortedData = Array.from(dataMap.values()).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+            const sortedData = Array.from(dataMap.values())
+                .map(({ mood: _, ...rest }) => rest as DailyEnergyData)
+                .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
             setDailyData(sortedData);
             setLoading(false);
         };

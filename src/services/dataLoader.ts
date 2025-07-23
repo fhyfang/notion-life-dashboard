@@ -1,9 +1,10 @@
-const responseimport type { DatabaseName } from './databases';
+import type { DatabaseName } from './databases';
+import type { NotionPage } from '../types/notion';
 
 export interface NotionData {
   [key: string]: {
     name: string;
-    data: any[];
+    data: NotionPage[];
     lastUpdated: string;
     error?: string;
   };
@@ -34,7 +35,7 @@ export async function loadNotionData(): Promise<NotionData> {
   return lastFetchPromise;
 }
 
-export async function getDatabaseData(databaseName: DatabaseName): Promise<any[]> {
+export async function getDatabaseData(databaseName: DatabaseName): Promise<NotionPage[]> {
   const allData = await loadNotionData();
   return allData[databaseName]?.data || [];
 }
