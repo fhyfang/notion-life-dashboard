@@ -870,6 +870,9 @@
             "relation": [
               {
                 "id": "238b6a1b-a406-80d1-bca7-ff53eb0fa071"
+              },
+              {
+                "id": "239b6a1b-a406-80fb-bcca-f8d867f36b22"
               }
             ],
             "has_more": false
@@ -881,7 +884,7 @@
               {
                 "type": "text",
                 "text": {
-                  "content": "追求创造全新、无法在没有AI的情况下存在的产品与服务，强调重塑用户工作流和提供魔法般体验。决策时应选择颠覆性的“AI Native”构想，而非简单的“AI赋能”改良。正面行为包括关注用户意图、设计惊艳体验和构建数据飞轮；负面行为则包括模仿人类低效流程和忽视伦理问题。",
+                  "content": "追求创造全新的“AI Native”产品与服务，重塑用户工作流，提供魔法般体验。判断标准是产品在去除AI核心后是否仍能存在。强调从“可能性”出发，设计“魔法时刻”，以用户意图为中心，构建数据反馈闭环，探索新交互方式。避免简单叠加AI功能、模仿人类流程、忽视冷启动和伦理问题。",
                   "link": null
                 },
                 "annotations": {
@@ -892,7 +895,7 @@
                   "code": false,
                   "color": "default"
                 },
-                "plain_text": "追求创造全新、无法在没有AI的情况下存在的产品与服务，强调重塑用户工作流和提供魔法般体验。决策时应选择颠覆性的“AI Native”构想，而非简单的“AI赋能”改良。正面行为包括关注用户意图、设计惊艳体验和构建数据飞轮；负面行为则包括模仿人类低效流程和忽视伦理问题。",
+                "plain_text": "追求创造全新的“AI Native”产品与服务，重塑用户工作流，提供魔法般体验。判断标准是产品在去除AI核心后是否仍能存在。强调从“可能性”出发，设计“魔法时刻”，以用户意图为中心，构建数据反馈闭环，探索新交互方式。避免简单叠加AI功能、模仿人类流程、忽视冷启动和伦理问题。",
                 "href": null
               }
             ]
@@ -903,6 +906,9 @@
             "relation": [
               {
                 "id": "238b6a1b-a406-805d-b9cd-c246f335d741"
+              },
+              {
+                "id": "239b6a1b-a406-801c-bf44-dca8f1d8d160"
               }
             ],
             "has_more": false
@@ -1598,6 +1604,9 @@
             "relation": [
               {
                 "id": "238b6a1b-a406-8026-bca0-e0ec7a3c812a"
+              },
+              {
+                "id": "239b6a1b-a406-80fb-bcca-f8d867f36b22"
               }
             ],
             "has_more": false
@@ -1609,7 +1618,7 @@
               {
                 "type": "text",
                 "text": {
-                  "content": "将AI视为重塑工作与创造的核心伙伴，优先探索颠覆性可能而非仅优化现有流程。鼓励大胆实验和分享发现，同时避免浅尝辄止和盲目信任AI输出。此价值观旨在引导深度思考，帮助规划未来项目。",
+                  "content": "将AI视为重塑工作与创造的核心伙伴，优先探索颠覆性可能而非单纯优化现有流程。鼓励提问、拥抱初稿、大胆实验和分享发现，同时避免浅尝辄止、路径依赖、盲目信任、害怕犯错和知识孤岛的行为。此价值观旨在引导深度思考和创新实践。",
                   "link": null
                 },
                 "annotations": {
@@ -1620,7 +1629,7 @@
                   "code": false,
                   "color": "default"
                 },
-                "plain_text": "将AI视为重塑工作与创造的核心伙伴，优先探索颠覆性可能而非仅优化现有流程。鼓励大胆实验和分享发现，同时避免浅尝辄止和盲目信任AI输出。此价值观旨在引导深度思考，帮助规划未来项目。",
+                "plain_text": "将AI视为重塑工作与创造的核心伙伴，优先探索颠覆性可能而非单纯优化现有流程。鼓励提问、拥抱初稿、大胆实验和分享发现，同时避免浅尝辄止、路径依赖、盲目信任、害怕犯错和知识孤岛的行为。此价值观旨在引导深度思考和创新实践。",
                 "href": null
               }
             ]
@@ -2662,7 +2671,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.181Z"
+    "lastUpdated": "2025-07-23T01:39:02.295Z"
   },
   "价值观检验": {
     "name": "价值观检验",
@@ -2791,16 +2800,16 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.139Z"
+    "lastUpdated": "2025-07-23T01:39:02.292Z"
   },
   "目标库": {
     "name": "目标库",
     "data": [
       {
         "object": "page",
-        "id": "238b6a1b-a406-80d1-bca7-ff53eb0fa071",
-        "created_time": "2025-07-22T13:53:00.000Z",
-        "last_edited_time": "2025-07-22T13:53:00.000Z",
+        "id": "239b6a1b-a406-80fb-bcca-f8d867f36b22",
+        "created_time": "2025-07-23T01:04:00.000Z",
+        "last_edited_time": "2025-07-23T01:13:00.000Z",
         "created_by": {
           "object": "user",
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
@@ -2810,7 +2819,150 @@
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
         },
         "cover": null,
-        "icon": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🗜️"
+        },
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8195-8663-f66a8f7c415e"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "时间跨度": {
+            "id": "%3F%3F%7Br",
+            "type": "select",
+            "select": {
+              "id": "feab2b43-f7e6-4ac3-b184-8f608e313f5c",
+              "name": "季度目标",
+              "color": "blue"
+            }
+          },
+          "逆相关 DB03a: 目标库": {
+            "id": "J%7DOC",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "成功标准（严格按照smart进行）": {
+            "id": "PzHW",
+            "type": "rich_text",
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "1、思维模式的转变—把AI当作伙伴：使用AI是本能反应，提高提问质量，能够接受AI的输出不符合自己心意\n2、技能掌握的深度与广度：构建和使用AI助手、自动化工作流 、多模态应用、\n3、工作习惯的重塑：常驻开启、随手同步上下文、产品质量和速度大福提升、\n4、影响力提升：清晰的向别人展示是如何使用AI的，并至少教会一个人，成为AI领域的资源\n",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "1、思维模式的转变—把AI当作伙伴：使用AI是本能反应，提高提问质量，能够接受AI的输出不符合自己心意\n2、技能掌握的深度与广度：构建和使用AI助手、自动化工作流 、多模态应用、\n3、工作习惯的重塑：常驻开启、随手同步上下文、产品质量和速度大福提升、\n4、影响力提升：清晰的向别人展示是如何使用AI的，并至少教会一个人，成为AI领域的资源\n",
+                "href": null
+              }
+            ]
+          },
+          "目标进度": {
+            "id": "%5BAqU",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "关联价值观": {
+            "id": "k%40Mx",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "238b6a1b-a406-80a2-9797-d50998c3697f"
+              },
+              {
+                "id": "238b6a1b-a406-8019-9dcd-d90411f73fbd"
+              }
+            ],
+            "has_more": false
+          },
+          "关联项目": {
+            "id": "lt%3FF",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8014-97c3-f68300195ff8"
+              }
+            ],
+            "has_more": false
+          },
+          "领域": {
+            "id": "tPEz",
+            "type": "select",
+            "select": {
+              "id": "32c75948-87d7-456a-a2c2-9b7595a71e6d",
+              "name": "学习成长",
+              "color": "orange"
+            }
+          },
+          "影响范围": {
+            "id": "zd%3ES",
+            "type": "select",
+            "select": {
+              "id": "fdd127c9-b910-453e-95e3-3b6226ec0b1e",
+              "name": "社区贡献",
+              "color": "blue"
+            }
+          },
+          "理想状态": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "成为一名真正的AI native，将AI无缝融入日常的工作和思考流程",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "成为一名真正的AI native，将AI无缝融入日常的工作和思考流程",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/AI-native-AI-239b6a1ba40680fbbccaf8d867f36b22",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "238b6a1b-a406-80d1-bca7-ff53eb0fa071",
+        "created_time": "2025-07-22T13:53:00.000Z",
+        "last_edited_time": "2025-07-23T01:04:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🗜️"
+        },
         "parent": {
           "type": "database_id",
           "database_id": "235b6a1b-a406-8195-8663-f66a8f7c415e"
@@ -2900,7 +3052,7 @@
         "object": "page",
         "id": "238b6a1b-a406-8026-bca0-e0ec7a3c812a",
         "created_time": "2025-07-22T13:43:00.000Z",
-        "last_edited_time": "2025-07-22T13:43:00.000Z",
+        "last_edited_time": "2025-07-23T01:04:00.000Z",
         "created_by": {
           "object": "user",
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
@@ -2910,7 +3062,10 @@
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
         },
         "cover": null,
-        "icon": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🗜️"
+        },
         "parent": {
           "type": "database_id",
           "database_id": "235b6a1b-a406-8195-8663-f66a8f7c415e"
@@ -3000,7 +3155,7 @@
         "object": "page",
         "id": "235b6a1b-a406-807b-9c43-c4f52963c39b",
         "created_time": "2025-07-19T15:17:00.000Z",
-        "last_edited_time": "2025-07-22T03:35:00.000Z",
+        "last_edited_time": "2025-07-23T01:04:00.000Z",
         "created_by": {
           "object": "user",
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
@@ -3010,7 +3165,10 @@
           "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
         },
         "cover": null,
-        "icon": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🗜️"
+        },
         "parent": {
           "type": "database_id",
           "database_id": "235b6a1b-a406-8195-8663-f66a8f7c415e"
@@ -3135,11 +3293,255 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.136Z"
+    "lastUpdated": "2025-07-23T01:39:02.707Z"
   },
   "项目库": {
     "name": "项目库",
     "data": [
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-8014-97c3-f68300195ff8",
+        "created_time": "2025-07-23T01:05:00.000Z",
+        "last_edited_time": "2025-07-23T01:30:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "📽️"
+        },
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-81c5-a1ff-f21434479d7f"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "关联行动": {
+            "id": "%3FYo%40",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8083-a99f-d230a8bc768e"
+              },
+              {
+                "id": "239b6a1b-a406-80fd-bb3e-c1ae61e7d5a5"
+              },
+              {
+                "id": "239b6a1b-a406-80ba-81d4-f761c8467ecb"
+              },
+              {
+                "id": "239b6a1b-a406-8085-b693-ed8c0c53132a"
+              },
+              {
+                "id": "239b6a1b-a406-80c5-8c8b-c822c13430af"
+              }
+            ],
+            "has_more": false
+          },
+          "相关笔记": {
+            "id": "IoCq",
+            "type": "rich_text",
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "如何实现AI first：",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "如何实现AI first：",
+                "href": null
+              },
+              {
+                "type": "text",
+                "text": {
+                  "content": "https://app.tana.inc?nodeid=MxxAvPPMpw57",
+                  "link": {
+                    "url": "https://app.tana.inc/?nodeid=MxxAvPPMpw57"
+                  }
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "https://app.tana.inc?nodeid=MxxAvPPMpw57",
+                "href": "https://app.tana.inc/?nodeid=MxxAvPPMpw57"
+              }
+            ]
+          },
+          "项目进度": {
+            "id": "LYrd",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "percent_per_group"
+            }
+          },
+          "开始日期": {
+            "id": "RSUK",
+            "type": "date",
+            "date": {
+              "start": "2025-07-23",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "总投入时长（分钟）": {
+            "id": "TaB%3A",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "项目复盘": {
+            "id": "Usn%5E",
+            "type": "rollup",
+            "rollup": {
+              "type": "array",
+              "array": [],
+              "function": "show_original"
+            }
+          },
+          "状态": {
+            "id": "X%5Bhq",
+            "type": "select",
+            "select": {
+              "id": "65a01cf8-0921-4c01-95a4-fde6843986e8",
+              "name": "执行中",
+              "color": "green"
+            }
+          },
+          "关联目标": {
+            "id": "%5BeYn",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-80fb-bcca-f8d867f36b22"
+              }
+            ],
+            "has_more": false
+          },
+          "影响范围": {
+            "id": "%5CfEI",
+            "type": "select",
+            "select": null
+          },
+          "欲望数据库 ": {
+            "id": "%5Dhci",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "里程碑": {
+            "id": "%60QzF",
+            "type": "multi_select",
+            "multi_select": [
+              {
+                "id": "7fe855ef-de66-49e1-8f58-395d2546a82a",
+                "name": "完成AI助手的构建",
+                "color": "brown"
+              },
+              {
+                "id": "2d7cd568-31ba-43e5-8307-f1d7ae0b7f0f",
+                "name": "成功搭建并运行第一个AI自动化流程",
+                "color": "pink"
+              }
+            ]
+          },
+          "截止日期": {
+            "id": "bKHt",
+            "type": "date",
+            "date": {
+              "start": "2025-07-31",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "DB08: 创造记录": {
+            "id": "jdzn",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "成果（交付物）": {
+            "id": "r%3Dw%40",
+            "type": "rich_text",
+            "rich_text": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "一个配置完成、包含核心上下文的个人 AI 助手\n至少两个实际运行的 AI 自动化工作流（附带流程说明）。\n一份记录学习心得与最佳实践的总结文档。\n 一套用于向团队分享的 PPT 或演示材料",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "一个配置完成、包含核心上下文的个人 AI 助手\n至少两个实际运行的 AI 自动化工作流（附带流程说明）。\n一份记录学习心得与最佳实践的总结文档。\n 一套用于向团队分享的 PPT 或演示材料",
+                "href": null
+              }
+            ]
+          },
+          "目标进度": {
+            "id": "%7C%3FE%5E",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "项目名称": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "AI协作能力提升",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "AI协作能力提升",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/AI-239b6a1ba406801497c3f68300195ff8",
+        "public_url": null
+      },
       {
         "object": "page",
         "id": "238b6a1b-a406-80bc-9e97-c6b5444e17a7",
@@ -3171,7 +3573,7 @@
             "relation": [],
             "has_more": false
           },
-          "资源": {
+          "相关笔记": {
             "id": "IoCq",
             "type": "rich_text",
             "rich_text": []
@@ -3314,7 +3716,7 @@
             "relation": [],
             "has_more": false
           },
-          "资源": {
+          "相关笔记": {
             "id": "IoCq",
             "type": "rich_text",
             "rich_text": []
@@ -3439,7 +3841,7 @@
             "relation": [],
             "has_more": false
           },
-          "资源": {
+          "相关笔记": {
             "id": "IoCq",
             "type": "rich_text",
             "rich_text": []
@@ -3595,7 +3997,7 @@
             ],
             "has_more": false
           },
-          "资源": {
+          "相关笔记": {
             "id": "IoCq",
             "type": "rich_text",
             "rich_text": []
@@ -3731,11 +4133,851 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:15.985Z"
+    "lastUpdated": "2025-07-23T01:39:02.401Z"
   },
   "行动库": {
     "name": "行动库",
     "data": [
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-80c5-8c8b-c822c13430af",
+        "created_time": "2025-07-23T01:30:00.000Z",
+        "last_edited_time": "2025-07-23T01:30:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8170-9066-ffc71e397670"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "行动类型": {
+            "id": "%3AH%3Bg",
+            "type": "select",
+            "select": null
+          },
+          "关联项目": {
+            "id": "%3B_xO",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8014-97c3-f68300195ff8"
+              }
+            ],
+            "has_more": false
+          },
+          "实际投入时长（分钟）": {
+            "id": "%3FOo_",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "完成日期": {
+            "id": "D~cp",
+            "type": "date",
+            "date": null
+          },
+          "是否逾期": {
+            "id": "GB%3Bx",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": "🟢 正常"
+            }
+          },
+          "DB10: 互动记录": {
+            "id": "HS%7Cr",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "能量要求": {
+            "id": "HzGT",
+            "type": "select",
+            "select": null
+          },
+          "状态 2": {
+            "id": "SHjJ",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "DB03b: 项目库 2": {
+            "id": "YWJG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "预估时长": {
+            "id": "dCd%3E",
+            "type": "number",
+            "number": null
+          },
+          "截止日期": {
+            "id": "nkPv",
+            "type": "date",
+            "date": null
+          },
+          "实际时长": {
+            "id": "noJ%60",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "DB04: 每日日志": {
+            "id": "rUNa",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态 1": {
+            "id": "uu%7C%3F",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态": {
+            "id": "uxl%3D",
+            "type": "status",
+            "status": null
+          },
+          "关联日志": {
+            "id": "vKFR",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "创建日期": {
+            "id": "wSyQ",
+            "type": "date",
+            "date": null
+          },
+          "优先级": {
+            "id": "%7Cb%3DO",
+            "type": "select",
+            "select": null
+          },
+          "完成周期（天）": {
+            "id": "~OMH",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": ""
+            }
+          },
+          "行动描述": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "学习tana中AI的使用和实现",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "学习tana中AI的使用和实现",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/tana-AI-239b6a1ba40680c58c8bc822c13430af",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-8085-b693-ed8c0c53132a",
+        "created_time": "2025-07-23T01:15:00.000Z",
+        "last_edited_time": "2025-07-23T01:15:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8170-9066-ffc71e397670"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "行动类型": {
+            "id": "%3AH%3Bg",
+            "type": "select",
+            "select": null
+          },
+          "关联项目": {
+            "id": "%3B_xO",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8014-97c3-f68300195ff8"
+              }
+            ],
+            "has_more": false
+          },
+          "实际投入时长（分钟）": {
+            "id": "%3FOo_",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "完成日期": {
+            "id": "D~cp",
+            "type": "date",
+            "date": null
+          },
+          "是否逾期": {
+            "id": "GB%3Bx",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": "🟢 正常"
+            }
+          },
+          "DB10: 互动记录": {
+            "id": "HS%7Cr",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "能量要求": {
+            "id": "HzGT",
+            "type": "select",
+            "select": null
+          },
+          "状态 2": {
+            "id": "SHjJ",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "DB03b: 项目库 2": {
+            "id": "YWJG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "预估时长": {
+            "id": "dCd%3E",
+            "type": "number",
+            "number": null
+          },
+          "截止日期": {
+            "id": "nkPv",
+            "type": "date",
+            "date": null
+          },
+          "实际时长": {
+            "id": "noJ%60",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "DB04: 每日日志": {
+            "id": "rUNa",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态 1": {
+            "id": "uu%7C%3F",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态": {
+            "id": "uxl%3D",
+            "type": "status",
+            "status": null
+          },
+          "关联日志": {
+            "id": "vKFR",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "创建日期": {
+            "id": "wSyQ",
+            "type": "date",
+            "date": null
+          },
+          "优先级": {
+            "id": "%7Cb%3DO",
+            "type": "select",
+            "select": null
+          },
+          "完成周期（天）": {
+            "id": "~OMH",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": ""
+            }
+          },
+          "行动描述": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "开启AI使用的分享",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "开启AI使用的分享",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/AI-239b6a1ba4068085b693ed8c0c53132a",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-80ba-81d4-f761c8467ecb",
+        "created_time": "2025-07-23T01:15:00.000Z",
+        "last_edited_time": "2025-07-23T01:15:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8170-9066-ffc71e397670"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "行动类型": {
+            "id": "%3AH%3Bg",
+            "type": "select",
+            "select": null
+          },
+          "关联项目": {
+            "id": "%3B_xO",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8014-97c3-f68300195ff8"
+              }
+            ],
+            "has_more": false
+          },
+          "实际投入时长（分钟）": {
+            "id": "%3FOo_",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "完成日期": {
+            "id": "D~cp",
+            "type": "date",
+            "date": null
+          },
+          "是否逾期": {
+            "id": "GB%3Bx",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": "🟢 正常"
+            }
+          },
+          "DB10: 互动记录": {
+            "id": "HS%7Cr",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "能量要求": {
+            "id": "HzGT",
+            "type": "select",
+            "select": null
+          },
+          "状态 2": {
+            "id": "SHjJ",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "DB03b: 项目库 2": {
+            "id": "YWJG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "预估时长": {
+            "id": "dCd%3E",
+            "type": "number",
+            "number": null
+          },
+          "截止日期": {
+            "id": "nkPv",
+            "type": "date",
+            "date": null
+          },
+          "实际时长": {
+            "id": "noJ%60",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "DB04: 每日日志": {
+            "id": "rUNa",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态 1": {
+            "id": "uu%7C%3F",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态": {
+            "id": "uxl%3D",
+            "type": "status",
+            "status": null
+          },
+          "关联日志": {
+            "id": "vKFR",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "创建日期": {
+            "id": "wSyQ",
+            "type": "date",
+            "date": null
+          },
+          "优先级": {
+            "id": "%7Cb%3DO",
+            "type": "select",
+            "select": null
+          },
+          "完成周期（天）": {
+            "id": "~OMH",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": ""
+            }
+          },
+          "行动描述": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "养成每日与AI协作解决问题的习惯",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "养成每日与AI协作解决问题的习惯",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/AI-239b6a1ba40680ba81d4f761c8467ecb",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-80fd-bb3e-c1ae61e7d5a5",
+        "created_time": "2025-07-23T01:14:00.000Z",
+        "last_edited_time": "2025-07-23T01:14:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8170-9066-ffc71e397670"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "行动类型": {
+            "id": "%3AH%3Bg",
+            "type": "select",
+            "select": null
+          },
+          "关联项目": {
+            "id": "%3B_xO",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8014-97c3-f68300195ff8"
+              }
+            ],
+            "has_more": false
+          },
+          "实际投入时长（分钟）": {
+            "id": "%3FOo_",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "完成日期": {
+            "id": "D~cp",
+            "type": "date",
+            "date": null
+          },
+          "是否逾期": {
+            "id": "GB%3Bx",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": "🟢 正常"
+            }
+          },
+          "DB10: 互动记录": {
+            "id": "HS%7Cr",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "能量要求": {
+            "id": "HzGT",
+            "type": "select",
+            "select": null
+          },
+          "状态 2": {
+            "id": "SHjJ",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "DB03b: 项目库 2": {
+            "id": "YWJG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "预估时长": {
+            "id": "dCd%3E",
+            "type": "number",
+            "number": null
+          },
+          "截止日期": {
+            "id": "nkPv",
+            "type": "date",
+            "date": null
+          },
+          "实际时长": {
+            "id": "noJ%60",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "DB04: 每日日志": {
+            "id": "rUNa",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态 1": {
+            "id": "uu%7C%3F",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态": {
+            "id": "uxl%3D",
+            "type": "status",
+            "status": null
+          },
+          "关联日志": {
+            "id": "vKFR",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "创建日期": {
+            "id": "wSyQ",
+            "type": "date",
+            "date": null
+          },
+          "优先级": {
+            "id": "%7Cb%3DO",
+            "type": "select",
+            "select": null
+          },
+          "完成周期（天）": {
+            "id": "~OMH",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": ""
+            }
+          },
+          "行动描述": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "学习并实践AI自动化，搭建至少2个工作流",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "学习并实践AI自动化，搭建至少2个工作流",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/AI-2-239b6a1ba40680fdbb3ec1ae61e7d5a5",
+        "public_url": null
+      },
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-8083-a99f-d230a8bc768e",
+        "created_time": "2025-07-23T01:14:00.000Z",
+        "last_edited_time": "2025-07-23T01:14:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": null,
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-8170-9066-ffc71e397670"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "行动类型": {
+            "id": "%3AH%3Bg",
+            "type": "select",
+            "select": null
+          },
+          "关联项目": {
+            "id": "%3B_xO",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "239b6a1b-a406-8014-97c3-f68300195ff8"
+              }
+            ],
+            "has_more": false
+          },
+          "实际投入时长（分钟）": {
+            "id": "%3FOo_",
+            "type": "rollup",
+            "rollup": {
+              "type": "number",
+              "number": 0,
+              "function": "sum"
+            }
+          },
+          "完成日期": {
+            "id": "D~cp",
+            "type": "date",
+            "date": null
+          },
+          "是否逾期": {
+            "id": "GB%3Bx",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": "🟢 正常"
+            }
+          },
+          "DB10: 互动记录": {
+            "id": "HS%7Cr",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "能量要求": {
+            "id": "HzGT",
+            "type": "select",
+            "select": null
+          },
+          "状态 2": {
+            "id": "SHjJ",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "DB03b: 项目库 2": {
+            "id": "YWJG",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "预估时长": {
+            "id": "dCd%3E",
+            "type": "number",
+            "number": null
+          },
+          "截止日期": {
+            "id": "nkPv",
+            "type": "date",
+            "date": null
+          },
+          "实际时长": {
+            "id": "noJ%60",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 0
+            }
+          },
+          "DB04: 每日日志": {
+            "id": "rUNa",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态 1": {
+            "id": "uu%7C%3F",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "状态": {
+            "id": "uxl%3D",
+            "type": "status",
+            "status": null
+          },
+          "关联日志": {
+            "id": "vKFR",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "创建日期": {
+            "id": "wSyQ",
+            "type": "date",
+            "date": null
+          },
+          "优先级": {
+            "id": "%7Cb%3DO",
+            "type": "select",
+            "select": null
+          },
+          "完成周期（天）": {
+            "id": "~OMH",
+            "type": "formula",
+            "formula": {
+              "type": "string",
+              "string": ""
+            }
+          },
+          "行动描述": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "构建并持续优化个人Ai助手",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "构建并持续优化个人Ai助手",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/Ai-239b6a1ba4068083a99fd230a8bc768e",
+        "public_url": null
+      },
       {
         "object": "page",
         "id": "238b6a1b-a406-8043-b169-ca6465262a8f",
@@ -5561,11 +6803,181 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.187Z"
+    "lastUpdated": "2025-07-23T01:39:02.367Z"
   },
   "每日日志": {
     "name": "每日日志",
     "data": [
+      {
+        "object": "page",
+        "id": "239b6a1b-a406-801c-bf44-dca8f1d8d160",
+        "created_time": "2025-07-23T01:28:00.000Z",
+        "last_edited_time": "2025-07-23T01:29:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "dc4f1394-cd27-4f4d-a876-b60d13dfac73"
+        },
+        "cover": null,
+        "icon": {
+          "type": "emoji",
+          "emoji": "🎫"
+        },
+        "parent": {
+          "type": "database_id",
+          "database_id": "235b6a1b-a406-81f6-bb1a-ef4d6b297e44"
+        },
+        "archived": false,
+        "in_trash": false,
+        "properties": {
+          "关联模型": {
+            "id": "%3DzvV",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联健康": {
+            "id": "%40HzL",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联行动": {
+            "id": "%40fmg",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "价值评分": {
+            "id": "A_n%3D",
+            "type": "number",
+            "number": 4
+          },
+          "关联财务": {
+            "id": "Cs%7C%5C",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "实际时长（分钟）": {
+            "id": "K%7BgM",
+            "type": "formula",
+            "formula": {
+              "type": "number",
+              "number": 142
+            }
+          },
+          "关联价值观": {
+            "id": "ZNp~",
+            "type": "relation",
+            "relation": [
+              {
+                "id": "238b6a1b-a406-80a2-9797-d50998c3697f"
+              }
+            ],
+            "has_more": false
+          },
+          "关联专注": {
+            "id": "aRxn",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "活动类别": {
+            "id": "amI%3B",
+            "type": "select",
+            "select": {
+              "id": "f39575d2-1d7e-4ea9-83e1-b9903664dd3f",
+              "name": "学习提升",
+              "color": "yellow"
+            }
+          },
+          "专注质量": {
+            "id": "b%3AZA",
+            "type": "number",
+            "number": 3
+          },
+          "日期": {
+            "id": "braX",
+            "type": "date",
+            "date": {
+              "start": "2025-07-23",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联复盘": {
+            "id": "g%5Dtx",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "开始时间": {
+            "id": "p%3Fb%5D",
+            "type": "date",
+            "date": {
+              "start": "2025-07-23T07:08:00.000+08:00",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联互动": {
+            "id": "sN~q",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "关联知识点": {
+            "id": "t_TF",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "结束时间": {
+            "id": "u%3AWH",
+            "type": "date",
+            "date": {
+              "start": "2025-07-23T09:30:00.000+08:00",
+              "end": null,
+              "time_zone": null
+            }
+          },
+          "关联情绪 ": {
+            "id": "%7DX%3E%60",
+            "type": "relation",
+            "relation": [],
+            "has_more": false
+          },
+          "活动名称": {
+            "id": "title",
+            "type": "title",
+            "title": [
+              {
+                "type": "text",
+                "text": {
+                  "content": "构建个人成长系统， 并研究如何用好AI",
+                  "link": null
+                },
+                "annotations": {
+                  "bold": false,
+                  "italic": false,
+                  "strikethrough": false,
+                  "underline": false,
+                  "code": false,
+                  "color": "default"
+                },
+                "plain_text": "构建个人成长系统， 并研究如何用好AI",
+                "href": null
+              }
+            ]
+          }
+        },
+        "url": "https://www.notion.so/AI-239b6a1ba406801cbf44dca8f1d8d160",
+        "public_url": null
+      },
       {
         "object": "page",
         "id": "238b6a1b-a406-8017-9ebe-d8f37585d46f",
@@ -7106,7 +8518,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:15.460Z"
+    "lastUpdated": "2025-07-23T01:39:02.369Z"
   },
   "情绪记录": {
     "name": "情绪记录",
@@ -7250,7 +8662,7 @@
             "type": "formula",
             "formula": {
               "type": "number",
-              "number": 4778
+              "number": 4919
             }
           },
           "触发类型": {
@@ -7412,7 +8824,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.149Z"
+    "lastUpdated": "2025-07-23T01:39:02.275Z"
   },
   "健康日记": {
     "name": "健康日记",
@@ -9145,7 +10557,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.163Z"
+    "lastUpdated": "2025-07-23T01:39:02.343Z"
   },
   "注意力记录": {
     "name": "注意力记录",
@@ -9235,7 +10647,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.135Z"
+    "lastUpdated": "2025-07-23T01:39:02.364Z"
   },
   "创造记录": {
     "name": "创造记录",
@@ -9334,7 +10746,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:15.230Z"
+    "lastUpdated": "2025-07-23T01:39:02.372Z"
   },
   "互动记录": {
     "name": "互动记录",
@@ -9582,7 +10994,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.152Z"
+    "lastUpdated": "2025-07-23T01:39:02.294Z"
   },
   "财务记录": {
     "name": "财务记录",
@@ -9685,7 +11097,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.432Z"
+    "lastUpdated": "2025-07-23T01:39:02.620Z"
   },
   "成长复盘": {
     "name": "成长复盘",
@@ -10077,7 +11489,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.540Z"
+    "lastUpdated": "2025-07-23T01:39:02.374Z"
   },
   "欲望数据库": {
     "name": "欲望数据库",
@@ -10177,7 +11589,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.138Z"
+    "lastUpdated": "2025-07-23T01:39:02.368Z"
   },
   "知识库": {
     "name": "知识库",
@@ -10490,7 +11902,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.137Z"
+    "lastUpdated": "2025-07-23T01:39:04.762Z"
   },
   "思维模型": {
     "name": "思维模型",
@@ -11000,7 +12412,7 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.139Z"
+    "lastUpdated": "2025-07-23T01:39:02.322Z"
   },
   "关系网": {
     "name": "关系网",
@@ -11144,6 +12556,6 @@
         "public_url": null
       }
     ],
-    "lastUpdated": "2025-07-22T23:18:14.146Z"
+    "lastUpdated": "2025-07-23T01:39:02.275Z"
   }
 }
