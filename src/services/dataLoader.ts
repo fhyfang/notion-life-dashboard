@@ -1,4 +1,5 @@
-// 数据加载服务
+import type { DatabaseName } from './databases';
+
 export interface NotionData {
   [key: string]: {
     name: string;
@@ -9,44 +10,40 @@ export interface NotionData {
 }
 
 let cachedData: NotionData | null = null;
-let lastFetch: number = 0;
-const CACHE_DURATION = 5 * 60 * 1000; // 5分钟缓存
+let lastFetchPromise: Promise<NotionData> | null = null;
 
 export async function loadNotionData(): Promise<NotionData> {
-  const now = Date.now();
-  
-  // 如果缓存有效，返回缓存数据
-  if (cachedData && (now - lastFetch) < CACHE_DURATION) {
-    return cachedData;
-  }
-  
-  try {
-    // 修复生产环境路径问题
-    const basePath = import.meta.env.DEV ? '/data/' : '/notion-life-dashboard/data/';
-    const response = await fetch(`${basePath}notion-data.json`);
-    if (!response.ok) {
-      throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
+  if (cachedData) return cachedData;
+  if (lastFetchPromise) return lastFetchPromise;
+
+  lastFetchPromise = (async () => {
+    try {
+      const response = await fetch('/notion-life-dashboard/notion-data.json'); // Adjusted for GitHub Pages
+      if (!response.ok) throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
+      
+      const data = await response.json();
+      cachedData = data;
+      return data;
+    } catch (error) {
+      console.error('Error loading Notion data:', error);
+      lastFetchPromise = null; 
+      return {};
     }
-    
-    cachedData = await response.json();
-    lastFetch = now;
-    return cachedData!;
-  } catch (error) {
-    console.error('Error loading Notion data:', error);
-    // 返回空数据结构
-    return {};
-  }
+  })();
+  return lastFetchPromise;
 }
 
-// 获取特定数据库的数据
-export async function getDatabaseData(databaseName: string) {
+export async function getDatabaseData(databaseName: DatabaseName): Promise<any[]> {
   const allData = await loadNotionData();
   return allData[databaseName]?.data || [];
 }
 
-// 获取数据最后更新时间
 export async function getLastUpdateTime(): Promise<string | null> {
   const allData = await loadNotionData();
-  const firstDb = Object.values(allData)[0];
-  return firstDb?.lastUpdated || null;
+  const firstDbKey = Object.keys(allData)[0];
+  if (firstDbKey) {
+    const lastUpdated = allData[firstDbKey]?.lastUpdated;
+    if (lastUpdated) return new Date(lastUpdated).toLocaleString('zh-CN', { hour12: false });
+  }
+  return 'N/A';
 }
