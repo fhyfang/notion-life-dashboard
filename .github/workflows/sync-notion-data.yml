@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm' # 增加缓存以加快速度
+          cache: 'npm' 
 
       - name: Install dependencies
         run: npm install
@@ -30,11 +30,19 @@ jobs:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
         run: node sync-notion-data.js
 
+      # 新增步骤：提交更新后的数据和 lock 文件
+      - name: Commit and push data
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add public/notion-data.json package-lock.json
+          git diff --staged --quiet || (git commit -m "chore: Sync Notion data and update lockfile" && git push)
+
       - name: Build the project
         run: npm run build
       
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4 # 使用最新版本
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
