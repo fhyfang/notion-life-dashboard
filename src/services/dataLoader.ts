@@ -18,7 +18,7 @@ export async function loadNotionData(): Promise<NotionData> {
 
   lastFetchPromise = (async () => {
     try {
-      const response = await fetch('/notion-life-dashboard/notion-data.json'); // Adjusted for GitHub Pages
+      const response = await fetch('/Notion-Life-仪表板/notion-data.json'); // Adjusted for GitHub Pages
       if (!response.ok) throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
       
       const data = await response.json();
