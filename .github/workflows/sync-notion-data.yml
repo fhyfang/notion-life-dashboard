@@ -28,7 +28,7 @@ jobs:
       - name: Sync data from Notion
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-        run: node sync-notion-data.js
+        run: node scripts/sync-notion-data.js
 
       # 新增步骤：提交更新后的数据和 lock 文件
       - name: Commit and push data
