@@ -18,7 +18,8 @@ export async function loadNotionData(): Promise<NotionData> {
 
   lastFetchPromise = (async () => {
     try {
-      const response = await fetch('/Notion-Life-仪表板/notion-data.json'); // Adjusted for GitHub Pages
+      // The base path is handled by vite.config.js, so we can use a relative path.
+      const response = await fetch('notion-data.json'); 
       if (!response.ok) throw new Error(`Failed to load data: ${response.status} ${response.statusText}`);
       
       const data = await response.json();
