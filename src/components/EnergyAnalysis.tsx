@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+const AnalysisCardimport { useEffect, useState } from 'react';
 import { getDatabaseData } from '../../services/dataLoader';
 import { motion } from 'framer-motion';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ComposedChart, Bar, BarChart } from 'recharts';
@@ -9,9 +9,10 @@ const getPlainText = (richText: any[] | undefined) => richText?.map(t => t.plain
 
 const AnalysisCard = ({ title, children, icon: Icon, color }: { title: string, children: React.ReactNode, icon: React.ElementType, color: string }) => (
     <div className="bg-white rounded-lg shadow-sm p-6">
-        <div className={`flex items-center mb-4 ${color}`}>
-            <Icon className="w-6 h-6 mr-3" />
-            <h3 className="text-lg font-bold">{title}</h3>
+        <div className="flex items-center mb-4">
+-           <Icon className={`w-6 h-6 mr-3 ${color}`} />
++           <Icon className="w-6 h-6 mr-3" style={{ color }} />
+            <h3 className="text-lg font-bold" style={{ color }}>{title}</h3>
         </div>
         {children}
     </div>
