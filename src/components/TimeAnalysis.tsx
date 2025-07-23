@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getDatabaseData } from '../../services/dataLoader';
+import { getDatabaseData } from '../services/dataLoader';
 import { motion } from 'framer-motion';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Legend, ReferenceLine } from 'recharts';
 import { Clock, BarChart2, AlertCircle } from 'lucide-react';

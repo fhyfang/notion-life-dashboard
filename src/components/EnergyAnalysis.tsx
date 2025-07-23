@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getDatabaseData } from '../../services/dataLoader';
+import { getDatabaseData } from '../services/dataLoader';
 import { motion } from 'framer-motion';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ComposedChart, Bar, BarChart } from 'recharts';
 import { Zap, Activity, Brain, BedDouble } from 'lucide-react';

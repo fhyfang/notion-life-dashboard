@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getDatabaseData } from '../../services/dataLoader';
+import { getDatabaseData } from '../services/dataLoader';
 import { motion } from 'framer-motion';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from 'recharts';
 import { BrainCircuit, BookOpen, Clock, AlertTriangle } from 'lucide-react';

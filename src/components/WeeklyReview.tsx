@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getDatabaseData } from '../../services/dataLoader';
+import { getDatabaseData } from '../services/dataLoader';
 import { motion } from 'framer-motion';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { Droplets, Clock, TrendingUp } from 'lucide-react';

@@ -47,7 +47,7 @@ const NavigationSystemEnhanced = () => {
         })
         .map((item: any) => ({
           name: item.properties["价值观名称"]?.title[0]?.plain_text || '未命名',
-          description: item.properties["核心描述"]?.rich_text[0]?.plain_text || '',
+          description: item.properties["正面行为 (Do's)"]?.rich_text[0]?.plain_text || '',
           priority: parseInt(item.properties["优先级"]?.select?.name?.replace('分', '') || '0'),
           icon: item.icon?.emoji || '🎯'
         }))

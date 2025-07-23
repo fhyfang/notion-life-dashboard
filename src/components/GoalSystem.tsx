@@ -16,18 +16,31 @@ const GoalSystem = () => {
   useEffect(() => {
     const fetchGoals = async () => {
       const data = await getDatabaseData('目标库');
-      const loadedGoals = data.map((item: any) => {
-        const deadline = item.properties["截止日期"]?.date?.start || '';
-        const remainingDays = deadline ? Math.ceil((new Date(deadline).getTime() - new Date().getTime()) / (1000 * 3600 * 24)) : 0;
-        // const progress = item.properties["进度"]?.number || 0;
-        
-        return {
-          name: item.properties["理想状态"]?.title[0]?.plain_text || '未命名目标',
-          progress: item.properties["目标进度"]?.rollup?.number || 0,
-          deadline: deadline,
-          remainingDays: Math.max(0, remainingDays)
-        };
-      });
+      const currentYear = new Date().getFullYear();
+      const currentQuarter = Math.floor((new Date().getMonth() + 3) / 3);
+      
+      const loadedGoals = data
+        .filter((item: any) => {
+          const timeSpan = item.properties["时间跨度"]?.select?.name;
+          // 只显示本年和本季度的目标
+          return timeSpan === `${currentYear}年` || 
+                 timeSpan === `${currentYear}Q${currentQuarter}` ||
+                 timeSpan === '本年' || 
+                 timeSpan === '本季';
+        })
+        .map((item: any) => {
+          const deadline = item.properties["截止日期"]?.date?.start || '';
+          const remainingDays = deadline ? Math.ceil((new Date(deadline).getTime() - new Date().getTime()) / (1000 * 3600 * 24)) : 0;
+          const progress = item.properties["目标进度"]?.rollup?.number || 0;
+          
+          return {
+            name: item.properties["理想状态"]?.title[0]?.plain_text || '未命名目标',
+            progress: Math.round(progress * 100) || 0, // 转换为百分比
+            deadline: deadline,
+            remainingDays: Math.max(0, remainingDays),
+            timeSpan: item.properties["时间跨度"]?.select?.name || ''
+          };
+        });
       setGoals(loadedGoals);
     };
 

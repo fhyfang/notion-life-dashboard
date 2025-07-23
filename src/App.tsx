@@ -8,12 +8,12 @@ import DeepAnalysisNav from './components/DeepAnalysisNav';
 import { getLastUpdateTime } from './services/dataLoader';
 import { motion } from 'framer-motion';
 import { CheckCircle, Home } from 'lucide-react';
-import EnergyAnalysis from './components/analysis/EnergyAnalysis';
-import TimeAnalysis from './components/analysis/TimeAnalysis';
-import SkillsAnalysis from './components/analysis/SkillsAnalysis';
-import RelationshipsAnalysis from './components/analysis/RelationshipsAnalysis';
-import MetaLearningAnalysis from './components/analysis/MetaLearningAnalysis';
-import WeeklyReview from './components/analysis/WeeklyReview';
+import EnergyAnalysis from './components/EnergyAnalysis';
+import TimeAnalysis from './components/TimeAnalysis';
+import SkillsAnalysis from './components/SkillsAnalysis';
+import RelationshipsAnalysis from './components/RelationshipsAnalysis';
+import MetaLearningAnalysis from './components/MetaLearningAnalysis';
+import WeeklyReview from './components/WeeklyReview';
 
 type Page = 'dashboard' | 'energy' | 'time' | 'skills' | 'relationships' | 'metalearning' | 'weekly';
 
