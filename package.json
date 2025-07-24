@@ -1,0 +1,44 @@
+{
+  "name": "notion-life-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "homepage": "https://fhyfang.github.io/notion-life-dashboard",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@notionhq/client": "^4.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "framer-motion": "^11.2.10",
+    "lucide-react": "^0.395.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages": "^6.1.1",
+    "globals": "^16.3.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.38.0",
+    "vite": "^5.2.0"
+  }
+}
